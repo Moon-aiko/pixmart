@@ -32,8 +32,8 @@ const paths = {
   viewsDir: dev + 'templates/',
   distDir: dist,
   dev: {
-    scss:  dev+'styles/**/*.scss',
-    styles: dev+'styles/pages/*.scss',
+    scss:  dev+'styles/**/*.{css,scss}',
+    styles: dev+'styles/pages/*.{css,scss}',
     svg: dev+'images/sprite/*.svg',
     views: dev+'templates/**/*.njk',
     pages: dev+'templates/pages/*/*.{njk,html}',
