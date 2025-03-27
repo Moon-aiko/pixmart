@@ -207,7 +207,7 @@ export const sprite = () =>
     .pipe(bs.stream())
 
 export const markup = () =>
-  src(paths.dev.pages, { since: lastRun(markup) })
+  src(paths.dev.pages)
     .pipe(data(getDataForFile))
     .pipe(nunjucks({
       path: paths.viewsDir
@@ -237,7 +237,8 @@ export const liveReload = () =>
     notify: false,
     open: args.open ? 'external' : false,
     baseDir: paths.distDir,
-    server: ['.', paths.distDir]
+    watch: true,
+    server: paths.distDir
   })
 
 export const build = series(clean, parallel(styles, images, sprite, markup))
