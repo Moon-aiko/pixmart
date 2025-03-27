@@ -212,10 +212,10 @@ export const markup = () =>
     .pipe(nunjucks({
       path: paths.viewsDir
     }))
-    .pipe(htmlLint({
+    .pipe(gulpif(args.lint, htmlLint({
       htmllintrc: ".htmllintrc.json",
       useHtmllintrc: true,
-    }))
+    })))
     .pipe(htmlLint.format(htmllintReporter))
     .pipe(rename({ dirname: '' }))
     .pipe(dest(paths.dist.pages))
