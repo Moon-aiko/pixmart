@@ -170,10 +170,6 @@ function htmllintReporter(results) {
 
 export const styles = () =>
   src(paths.dev.styles, { sourcemaps: true })
-    .pipe(sass({
-      outputStyle: 'expanded',
-      indentWidth: 4
-    }).on('error', sass.logError))
     .pipe(postcss([
       args.lint ? stylelint() : () => {},
       isDev ? debug : () => { },
@@ -186,6 +182,10 @@ export const styles = () =>
         clearMessages: true
       })
     ], { syntax: postcssScss }))
+    .pipe(sass({
+      outputStyle: 'expanded',
+      indentWidth: 4
+    }).on('error', sass.logError))
     .pipe(dest(paths.dist.styles, { sourcemaps: true }))
     .pipe(gulpif(args.debug, size(sizeOptions)))
     .pipe(bs.stream())
