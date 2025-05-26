@@ -1,8 +1,14 @@
-body {
-    color: rgb(0, 0, 0);
-}
-
-.ololo {
-  test: ddd;
-  color: #000000;
-}
+@use "../base/global";
+@use "../base/typography";
+@use "../base/mixins";
+@use "../layout/header";
+@use "../layout/footer";
+@use "../base/variables";
+@use "../components/buttons";
+@use "../components/link";
+@use "../components/switcher";
+@use "../components/menu";
+@use "../components/icons";
+@use "../components/search";
+@use "../components/form-field";
+@use "../components/footer-nav";

@@ -1,0 +1,75 @@
+@use "../base/mixins" as *;
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+
+  &__label {
+    font-size: var(--font-size-p3);
+    line-height: var(--line-height-p3);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-label);
+  }
+
+  &__input {
+    background-color: var(--color-bg);
+    height: 40px;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-separator-bold);
+    border-radius: var(--space-2);
+
+    &::placeholder {
+      color: var(--color-secondary-2);
+      font-size: var(--font-size-p3);
+      line-height: var(--line-height-p3);
+      font-weight: var(--font-weight-regular);
+    }
+
+    &:hover {
+      border: 2px solid var(--color-focus);
+    }
+
+    &:focus {
+      border: 3px solid var(--color-focus);
+    }
+
+    &:disabled {
+      background-color: var(--color-separator);
+      border: 1px solid var(--color-separator-bold);
+    }
+  }
+
+  &__message {
+    font-size: var(--font-size-p4);
+    font-weight: var(--font-weight-regular);
+    line-height: (var--line-height-p4);
+    letter-spacing: var(--letter-spacing-normal);
+    margin-top: var(--space-1);
+
+    &--error {
+      color: var(--color-error);
+    }
+
+    &--success {
+      color: var(--color-success);
+    }
+
+    &--help {
+      color: var(--color-secondary-text);
+    }
+  }
+
+  &--invalid &__input {
+    border-color: var(--color-error);
+  }
+
+  &--validated {
+    border-color: var(--color-separator-bold);
+  }
+
+  &--disabled {
+    background-color: var(--color-disabled-bg);
+    color: var(--color-disabled-text);
+  }
+}

@@ -1,0 +1,127 @@
+@use "../base/mixins" as *;
+.footer {
+  &__container {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  &__top {
+    padding: var(--space-8) var(--space-4);
+    display: grid;
+    gap: var(--space-4);
+    margin-bottom: var(--space-9);
+
+    @include tab {
+      padding: var(--space-12) var(--space-9);
+      grid-template-columns: 2fr 1fr 2fr;
+      align-items: start;
+    }
+    @include tab {
+      padding: var(--space-12) var(--space-14);
+    }
+  }
+
+  &__info {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  &__logo {
+    display: block;
+    width: 300px;
+    height: 58px;
+  }
+
+  &__middle {
+    padding-inline: var(--space-4);
+    display: grid;
+    gap: var(--space-8);
+    margin-bottom: var(--space-8);
+
+    @include tab {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__description,
+  &__bottom,
+  &__bottom-link {
+    font-size: var(--font-size-p2);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-p2);
+    letter-spacing: var(--letter-spacing-normal);
+  }
+
+  &__nav {
+    display: grid;
+    gap: var(--space-8);
+
+    @include tab {
+      grid-column: 3;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__subscribe {
+    display: grid;
+    gap: var(--space-7);
+
+    @include tab {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      gap: var(--space-4);
+    }
+  }
+
+  &__subscribe-action {
+    display: flex;
+    gap: var(--space-2);
+  }
+
+  &__subscribe-title {
+    max-width: 220px;
+    white-space: normal;
+  }
+
+  .input__email {
+    width: 100%;
+    min-width: 220px;
+    max-width: 300px;
+    height: 64px;
+  }
+
+  &__bottom {
+    padding: var(--space-7) var(--space-4);
+    color: var(--color-secondary-2-invert);
+    background-color: var(--color-primary);
+    padding: var(--space-7) var(--space-4);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-8);
+
+    @include tab {
+      padding: var(--space-7) var(--space-14);
+    }
+  }
+
+  &__bottom-link {
+    padding-left: 8px;
+    color: var(--color-secondary-2-invert);
+
+    &:first-child {
+      padding-left: 0px;
+    }
+
+    &--with-divider::after {
+      content: "|";
+      display: inline-block;
+      margin-left: 8px;
+    }
+  }
+}

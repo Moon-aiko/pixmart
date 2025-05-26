@@ -1,0 +1,32 @@
+.icon--logo {
+  fill: var(--color-accent);
+  width: 108px;
+  height: 24px;
+}
+.icon--search {
+  display: inline-block;
+  stroke: black;
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+
+.icon--bag {
+  display: inline-block;
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+.icon--footer-logo {
+  width: 300px;
+  height: 51px;
+  fill: var(--color-accent);
+}
+
+.icon--twitter,
+.icon--facebook,
+.icon--telegram {
+  width: 24px;
+  height: 24px;
+  fill: black;
+}
