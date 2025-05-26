@@ -1,6 +1,6 @@
 @use "../base/mixins" as *;
 .header {
-  background-color: var(----bg-base);
+  background-color: var(--bg-base);
   box-shadow: 0 4px 40px rgba(29, 57, 95, 0.02);
   padding: 24px 16px;
   position: fixed;
