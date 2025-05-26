@@ -1,11 +1,17 @@
+@use "../base/mixins" as *;
 .footer-nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(1fr));
   gap: var(--space-8);
 
   &__section {
+    min-width: 205px;
     display: grid;
     gap: var(--space-4);
+
+    @include tab {
+      min-width: auto;
+    }
   }
 
   &__list {
