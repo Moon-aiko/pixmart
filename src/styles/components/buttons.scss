@@ -1,0 +1,131 @@
+@use "../base/mixins" as mixins;
+.button {
+  all: unset;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-semibold);
+  display: inline-flex;
+  gap: var(--space-2);
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--space-2);
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s, box-shadow 0.3s;
+
+  &--primary {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+      background-color: var(--color-focus);
+    }
+
+    &:focus {
+      background-color: var(--color-accent);
+      box-shadow: inset 0 0 0 4px var(--color-focus);
+      outline: none;
+    }
+
+    &:active {
+      background-color: var(--color-accent-blue);
+    }
+
+    &:disabled {
+      background-color: var(--color-separator-bold);
+      color: var(--color-disabled);
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+
+  &--secondary {
+    background-color: var(--bg-base);
+    color: var(--color-primary);
+    border: 2px solid var(--color-separator-bold);
+    box-shadow: none;
+
+    &:hover {
+      background-color: var(--color-separator);
+      border-color: var(--color-separator);
+    }
+
+    &:focus {
+      background-color: var(--color-separator);
+      box-shadow: 0 0 0 4px var(--color-focus);
+    }
+
+    &:active {
+      background-color: var(--color-separator);
+      border-color: var (--color-separator);
+    }
+
+    &:disabled {
+      background-color: var(--color-separator-bold);
+      color: var(--color-disabled);
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+
+  &--ghost {
+    background-color: var(--bg-base);
+    color: var(--color-primary);
+    padding: var(--space-5) var(--space-8);
+    box-shadow: none;
+
+    &:hover {
+      background-color: var(--color-separator);
+      box-shadow: 0 0 0 1px var(--color-focus);
+    }
+
+    &:focus {
+      background-color: var(--color-separator);
+      box-shadow: 0 0 0 4px var(--color-focus);
+    }
+
+    &:active {
+      background-color: var(--color-separator);
+    }
+
+    &:disabled {
+      background-color: var(--base);
+      color: var(--color-disabled);
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+
+  &--large {
+    @include mixins.button-size(
+      var(--space-5),
+      var(--space-8),
+      var(--font-size-p1),
+      var(--line-height-p1)
+    );
+  }
+  &--medium {
+    @include mixins.button-size(
+      var(--space-2),
+      var(--space-6),
+      var(--font-size-p2),
+      var(--line-height-p2)
+    );
+  }
+  &--small {
+    @include mixins.button-size(
+      var(--space-1),
+      var(--space-3),
+      var(--font-size-p3),
+      var(--line-height-p3)
+    );
+  }
+  &__icon-large {
+    @include mixins.button-icon-size("large");
+  }
+  &__icon-medium {
+    @include mixins.button-icon-size("medium");
+  }
+  &__icon-small {
+    @include mixins.button-icon-size("small");
+  }
+}

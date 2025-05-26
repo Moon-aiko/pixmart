@@ -1,0 +1,27 @@
+.link {
+  text-decoration: none;
+  transition: color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    color: var(--color-focus);
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px var(--color-focus);
+    border-radius: var(--space-1);
+    padding: var(--space-1);
+  }
+
+  &:visited {
+    color: var(--color-accent-blue);
+  }
+
+  &:disabled,
+  &--disabled {
+    color: var(--color-disabled);
+    pointer-events: none;
+    opacity: 0.6;
+  }
+}

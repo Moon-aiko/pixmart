@@ -1,0 +1,26 @@
+@mixin desk {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin button-size($padding-y, $padding-x, $font-size, $line-height) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+@mixin button-icon-size($size) {
+  @if $size == "large" {
+    padding: var(--space-6);
+  } @else if $size == "medium" {
+    padding: var(--space-3);
+  } @else if $size == "small" {
+    padding: var(--space-2);
+  }
+}

@@ -1,0 +1,49 @@
+@use "../base/mixins" as *;
+.search-wrapper {
+  position: relative;
+  display: flex;
+
+  &__toggle {
+    display: none;
+  }
+
+  &__form {
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1000;
+    position: relative;
+
+    @include tab {
+      visibility: visible;
+      max-height: none;
+      opacity: 1;
+      pointer-events: all;
+      overflow: visible;
+      display: block;
+      transform: none;
+    }
+  }
+
+  &__toggle:checked ~ &__form {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+    margin-right: 8px;
+    max-height: 92px;
+  }
+
+  .button__icon-small {
+    @include tab {
+      display: none;
+    }
+  }
+  .search__input {
+    width: 100%;
+    min-width: 220px;
+    max-width: 300px;
+  }
+}
