@@ -78,10 +78,6 @@
   }
 
   &__panel {
-    font-size: var(--font-size-p1);
-    font-weight: var(--font-weight-semibold);
-    line-height: var(--line-height-p1);
-    letter-spacing: var(--letter-spacing-normal);
     position: fixed;
     top: 92px;
     margin: 0;
@@ -92,6 +88,7 @@
     transform: translateX(-100%);
     transition: transform 0.3s ease-in;
     z-index: 1001;
+    background-color: var(--bg-base);
 
     @include tab {
       transform: none;
@@ -126,6 +123,21 @@
 
     @include tab {
       padding: var(--space-1) var(--space-3);
+    }
+  }
+
+  &__link {
+    font-size: var(--font-size-p1);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-p1);
+    letter-spacing: var(--letter-spacing-normal);
+    color: var(--color-primary);
+
+    @include tab {
+      font-size: var(--font-size-p3);
+      font-weight: var(--font-weight-semibold);
+      line-height: var(--line-height-p3);
+      letter-spacing: var(--letter-spacing-normal);
     }
   }
 }
