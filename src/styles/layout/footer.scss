@@ -13,11 +13,12 @@
 
     @include tab {
       padding: var(--space-12) var(--space-9);
-      grid-template-columns: 2fr 1fr 2fr;
+      grid-template-columns: 2fr 110px 2fr;
       align-items: start;
     }
-    @include tab {
+    @include desk {
       padding: var(--space-12) var(--space-14);
+      grid-template-columns: 2fr 440px 2fr;
     }
   }
 
@@ -34,13 +35,14 @@
 
   &__middle {
     padding-inline: var(--space-4);
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: var(--space-8);
     margin-bottom: var(--space-8);
 
     @include tab {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
+      display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
     }
@@ -56,12 +58,18 @@
   }
 
   &__nav {
-    display: grid;
-    gap: var(--space-8);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-7);
+    transition: gap 0.3s ease, justify-content 0.3s ease;
 
     @include tab {
       grid-column: 3;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      flex-wrap: nowrap;
+      gap: var(--space-12);
+      align-items: flex-start;
+      justify-content: space-between;
     }
   }
 
