@@ -59,5 +59,45 @@
       { "label": "Site Map", "url": "#" }
     ],
     "copyright": "Copyright © 2024 Pixmart. All rights reserved."
+  },
+  "hero": {
+    "images": [
+      {
+        "alt": "Abstract 3D layout",
+        "mobile": "banner-photo-1-mob",
+        "tablet": "banner-photo-1-tab",
+        "desktop": "banner-photo-1-desk",
+        "area": "left"
+      },
+      {
+        "alt": "Creative product shot",
+        "mobile": "banner-photo-3-mob",
+        "tablet": "banner-photo-3-tab",
+        "desktop": "banner-photo-3-desk",
+        "area": "top"
+      },
+      {
+        "alt": "Modern NFT artwork",
+        "mobile": "banner-photo-2-mob",
+        "tablet": "banner-photo-2-tab",
+        "desktop": "banner-photo-2-desk",
+        "area": "bottom"
+      }
+    ],
+    "titleStart": "Craft Your Success with Our",
+    "titleAccent": "Digital",
+    "titleEnd": "Assets",
+    "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
+    "buttons": [
+      {
+        "text": "Shop Now",
+        "url": "#"
+      },
+      {
+        "text": "Watch About Us",
+        "url": "#",
+        "icon": "play"
+      }
+    ]
   }
 }
