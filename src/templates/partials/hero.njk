@@ -20,12 +20,16 @@
       />
     </picture>
     {% endfor %}
-    <img src="{{ hero.icons.top }}" alt="" class="hero__icon hero__icon--top" />
-    <img
-      src="{{ hero.icons.bottom }}"
-      alt=""
-      class="hero__icon hero__icon--bottom"
-    />
+    <div class="hero__icon-wrapper hero__icon-wrapper--top">
+      <svg class="icon__hero">
+        <use href="/img/sprite.svg#{{ hero.icons.top }}"></use>
+      </svg>
+    </div>
+    <div class="hero__icon-wrapper hero__icon-wrapper--bottom">
+      <svg class="icon__hero">
+        <use href="/img/sprite.svg#{{ hero.icons.bottom }}"></use>
+      </svg>
+    </div>
   </div>
 
   <div class="hero__content">
