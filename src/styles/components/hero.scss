@@ -23,7 +23,7 @@
   }
 
   &__images {
-    background-color: var(--bg-base);
+    position: relative;
     grid-column: 3;
     display: grid;
     gap: var(--space-10);
@@ -31,31 +31,56 @@
     grid-template-areas:
       "left top"
       "left bottom";
+    grid-template-columns: auto auto;
+
+    @include tab {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include desk {
+      grid-template-columns: 60% 40%;
+    }
   }
 
   &__picture {
     &--left {
-      width: 131px;
-      height: 197px;
+      margin-top: 30px;
       grid-area: left;
       z-index: 3;
+      width: 131px;
+
+      @include tab {
+        width: 200px;
+      }
+      @include desk {
+        width: 281px;
+      }
     }
     &--top {
-      width: 171px;
-      height: 96px;
       grid-area: top;
       z-index: 2;
-      margin-top: -26px;
-      margin-bottom: -20px;
+      width: 171px;
+
+      @include tab {
+        width: 207px;
+      }
+      @include desk {
+        width: 292px;
+      }
     }
     &--bottom {
-      width: 242px;
-      height: 140px;
       left: 106px;
       grid-area: bottom;
       z-index: 1;
-      margin-top: -20px;
-      margin-left: -75px;
+      margin-left: -72px;
+      margin-top: -35px;
+      width: 242px;
+
+      @include tab {
+        width: 366px;
+      }
+      @include desk {
+        width: 514px;
+      }
     }
 
     img {
@@ -66,19 +91,40 @@
     }
   }
 
-  &__icon {
+  &__icon-wrapper {
     position: absolute;
-    width: 24px;
-    height: 24px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-base);
+    box-shadow: var(--shadow-hero);
+    border-radius: 3px;
 
+    @include desk {
+      width: 56px;
+      height: 56px;
+    }
     &--top {
-      top: 1rem;
-      right: 1rem;
+      z-index: 4;
+      top: -10px;
+      left: 305px;
+    }
+    @include desk {
+      top: 24px;
+      right: 24px;
     }
 
     &--bottom {
-      bottom: 1rem;
-      left: 1rem;
+      z-index: 4;
+      top: 235px;
+      left: 18px;
+
+      @include desk {
+        bottom: 24px;
+        left: 24px;
+      }
     }
   }
 

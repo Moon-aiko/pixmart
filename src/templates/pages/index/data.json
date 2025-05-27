@@ -84,6 +84,10 @@
         "area": "bottom"
       }
     ],
+    "icons": {
+      "top": "hero-icon-top",
+      "bottom": "hero-icon-bottom"
+    },
     "titleStart": "Craft Your Success with Our",
     "titleAccent": "Digital",
     "titleEnd": "Assets",
