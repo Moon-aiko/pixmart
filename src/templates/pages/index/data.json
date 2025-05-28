@@ -103,5 +103,12 @@
         "icon": "play"
       }
     ]
-  }
+  },
+  "features": [
+    { "label": "UI Kits", "icon": "ui" },
+    { "label": "Social Media", "icon": "social-media" },
+    { "label": "Presentation", "icon": "presentation" },
+    { "label": "Fonts", "icon": "fonts" },
+    { "label": "Illustrations", "icon": "illustration" }
+  ]
 }
