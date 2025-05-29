@@ -1,40 +1,18 @@
+@use "../base/mixins" as *;
 .feature-cards {
-  padding: 64px 16px;
-  background-color: orange;
-
   &__flex {
     display: flex;
-    gap: 32px;
+    gap: var(--space-4);
     justify-content: space-between;
-  }
-}
-.feature-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  text-align: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 
-  &__icon {
-    height: 224px;
-    width: 224px;
-    border-radius: 20px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__svg {
-    width: 150px;
-    height: 150px;
-    color: blue;
-    stroke: currentColor;
-
-    &__label {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--color-text-main);
+    @include tab {
+      overflow-x: hidden;
+      flex-wrap: nowrap;
+    }
+    @include desk {
+      gap: var(--space-8);
     }
   }
 }

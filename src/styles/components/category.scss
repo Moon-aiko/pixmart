@@ -1,0 +1,47 @@
+@use "../base/mixins" as *;
+.categories {
+  padding-inline: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  max-width: 408px;
+
+  @include tab {
+    flex-direction: row-reverse;
+    max-width: 1024px;
+    flex-wrap: nowrap;
+  }
+  @include desk {
+    max-width: 1440px;
+  }
+  &__header {
+    display: grid;
+    gap: var(--space-4);
+    justify-items: start;
+  }
+
+  &__subtitle {
+    font-size: var(--font-size-p2);
+    line-height: var(--line-height-p2);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: (--letter-spacing-normal);
+    color: var(--color-focus-2);
+  }
+  &__text {
+    font-size: var(--font-size-p1);
+    line-height: var(--line-height-p1);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: (--letter-spacing-normal);
+    color: var(--color-secondary);
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+    max-width: 440px;
+
+    @include desk {
+      max-width: 608px;
+    }
+  }
+}
