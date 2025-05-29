@@ -1,3 +1,4 @@
+@use "../base/mixins" as *;
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +27,16 @@ a {
   flex: 1;
   padding-top: 92px;
   overflow-x: hidden;
+  display: grid;
+  gap: 64px;
+  padding-inline: 16px;
+
+  @include tab {
+    padding-inline: 40px;
+  }
+  @include desk {
+    padding-inline: 80px;
+  }
 }
 
 .visually-hidden {

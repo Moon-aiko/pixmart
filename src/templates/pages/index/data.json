@@ -110,5 +110,37 @@
     { "label": "Presentation", "icon": "presentation" },
     { "label": "Fonts", "icon": "fonts" },
     { "label": "Illustrations", "icon": "illustration" }
+  ],
+  "categories": [
+    {
+      "icon": "ui",
+      "title": "Templates",
+      "tag1": "For all needs",
+      "tag2": "Modern"
+    },
+    {
+      "type": "placeholder1"
+    },
+    {
+      "icon": "social-media",
+      "title": "Slides",
+      "tag1": "Pitch-ready",
+      "tag2": "Creative"
+    },
+    {
+      "icon": "presentation",
+      "title": "App Icons",
+      "tag1": "High-quality",
+      "tag2": "Elegant"
+    },
+    {
+      "type": "placeholder2"
+    },
+    {
+      "icon": "fonts",
+      "title": "Design Tools",
+      "tag1": "Easy to use",
+      "tag2": "Unique"
+    }
   ]
 }
