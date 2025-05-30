@@ -30,9 +30,12 @@ a {
   display: grid;
   gap: 64px;
   padding-inline: 16px;
+  margin-bottom: 64px;
 
   @include tab {
     padding-inline: 40px;
+    gap: 120px;
+    margin-bottom: 120px;
   }
   @include desk {
     padding-inline: 80px;

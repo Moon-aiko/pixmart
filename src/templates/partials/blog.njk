@@ -1,0 +1,45 @@
+<section class="blog">
+  <div class="blog__container">
+    <div class="blog__header">
+      <h2 class="blog__title">{{ blog.title }}</h2>
+      <a href="{{ blog.articlesLink }}" class="subtitle blog__subtitle">
+        Explore All Articles
+        <svg class="blog__icon">
+          <use href="/img/sprite.svg#chevron-right"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="blog__list">
+      {% for article in blog.articles %}
+      <article class="blog__item">
+        <div class="blog__image-wrapper">
+          {% for image in article.images %}
+          <picture class="blog__picture blog__picture--{{ image.area }}">
+            <source
+              srcset="/img/{{ image.desktop }}-1x.webp, /img/{{ image.desktop }}-2x.webp 2x"
+              media="(min-width: 1440px)"
+              type="image/webp"
+            />
+            <source
+              srcset="/img/{{ image.tablet }}-1x.webp, /img/{{ image.tablet }}-2x.webp 2x"
+              media="(min-width: 1024px)"
+              type="image/webp"
+            />
+            <img
+              src="/img/{{ image.mobile }}-1x.webp"
+              srcset="/img/{{ image.mobile }}-2x.webp 2x"
+              alt="{{ image.alt }}"
+              class="blog__image"
+            />
+          </picture>
+          {% endfor %}
+        </div>
+        <h3 class="blog__name">{{ article.title }}</h3>
+        <time class="blog__date" datetime="{{ article.date }}">{{
+          article.displayDate
+        }}</time>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

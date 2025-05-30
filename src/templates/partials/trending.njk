@@ -1,0 +1,66 @@
+<section class="products">
+  <div class="products__container">
+    <div class="products__header">
+      <span class="subtitle">{{ products.label }}</span>
+      <h2 class="products__title">{{ products.title }}</h2>
+      <div class="products__controls">
+        <button
+          class="products__nav button button--secondary button--icon-large"
+          aria-label="Previous"
+        >
+          <svg class="icon icon__trending--left">
+            <use href="/img/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+        <button
+          class="products__nav button button--secondary button--icon-large"
+          aria-label="Next"
+        >
+          <svg class="icon icon__trending--right">
+            <use href="/img/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="products__cards card-scroll__container">
+    <div class="products__list">
+      {% for item in products.items %}
+      <article class="product-card">
+        <div class="product-card__image-wrapper">
+          <img
+            src="/img/{{ item.image }}-1x.webp"
+            alt="{{ item.title | lower }}"
+            srcset="/img/{{ item.image }}-1x.webp, /img/{{ item.image }}-2x.webp 2x"
+            class="product-card__image"
+          />
+
+          {% if item.badge %}
+          <span class="badge badge--{{ item.badgeType }}">
+            <svg class="icon icon--badge">
+              <use href="/img/sprite.svg#{{ item.badgeType }}"></use>
+            </svg>
+          </span>
+          {% endif %}
+          <div class="product-card__overlay">
+            <button class="button button--primary button--large">
+              Go to product
+            </button>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__title">{{ item.title }}</h3>
+          <p class="product-card__price">{{ item.price }}</p>
+        </div>
+
+        {% if item.category %}
+        <p class="product-card__category">
+          {% for cat in item.category %}
+          {{ cat }}{% if not loop.last %} · {% endif %} {% endfor %}
+        </p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

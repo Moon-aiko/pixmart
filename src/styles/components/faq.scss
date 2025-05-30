@@ -1,7 +1,5 @@
 @use "../base/mixins" as *;
 .faq {
-  padding-inline: var(--space-4);
-
   &__container {
     position: relative;
     display: flex;
