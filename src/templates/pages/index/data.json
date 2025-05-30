@@ -142,5 +142,27 @@
       "tag1": "Easy to use",
       "tag2": "Unique"
     }
+  ],
+  "faqs": [
+    {
+      "question": "Can I request a refund?",
+      "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    },
+    {
+      "question": "How do I access my purchased products?",
+      "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download.."
+    },
+    {
+      "question": "Are there any discounts for bulk purchases?",
+      "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    },
+    {
+      "question": "What payment methods do you accept here?",
+      "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    },
+    {
+      "question": "Can I sell my digital products on this marketplace??",
+      "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    }
   ]
 }
