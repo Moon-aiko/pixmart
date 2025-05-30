@@ -1,0 +1,37 @@
+<section class="pricing">
+  <div class="container">
+    <span class="subtitle">{{ pricing.label }}</span>
+    <h2 class="pricing__title">{{ pricing.title }}</h2>
+    <div class="pricing__plans">
+      {% for plan in pricing.plans %}
+      <article
+        class="pricing-card{% if plan.highlighted %} pricing-card--highlighted{% endif %}"
+      >
+        {% if plan.badge %}
+        <div class="badge badge--bestseller">{{ plan.badge }}</div>
+        {% endif %}
+        <h3 class="pricing-card__name">{{ plan.name }}</h3>
+        <p class="pricing-card__price">
+          <span class="pricing-card__value">{{ plan.price }}</span>
+          <span class="pricing-card__period"> {{ plan.period }}</span>
+        </p>
+        <ul class="pricing-card__features">
+          {% for feature in plan.features %}
+          <li class="pricing-card__feature">
+            <svg class="icon icon--check" aria-hidden="true">
+              <use href="/img/sprite.svg#check"></use>
+            </svg>
+            {{ feature }}
+          </li>
+          {% endfor %}
+        </ul>
+        <button
+          class="button{% if plan.highlighted %} button--primary{% else %} button--secondary{% endif %} button--large"
+        >
+          {{ plan.button }}
+        </button>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

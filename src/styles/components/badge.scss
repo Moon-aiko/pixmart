@@ -1,0 +1,32 @@
+.badge {
+  position: absolute;
+
+  &--trophy {
+    right: -1px;
+    height: 56px;
+    width: 56px;
+    background-color: green;
+    color: orange;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 16px;
+    background-color: var(--color-accent);
+  }
+}
+.badge--bestseller {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-h5);
+  line-height: var(--line-height-h5);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-normal);
+  right: -2px;
+  top: 0px;
+  width: 173px;
+  height: 40px;
+  background: var(--color-accent);
+  color: white;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+  padding: 4px;
+}

@@ -122,13 +122,14 @@
       var(--line-height-p3)
     );
   }
-  &__icon-large {
+
+  &--icon-large {
     @include mixins.button-icon-size("large");
   }
-  &__icon-medium {
+  &--icon-medium {
     @include mixins.button-icon-size("medium");
   }
-  &__icon-small {
+  &--icon-small {
     @include mixins.button-icon-size("small");
   }
 }

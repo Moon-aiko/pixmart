@@ -1,0 +1,61 @@
+@use "../base/mixins" as *;
+.blog {
+  &__container {
+    display: grid;
+    gap: 48px;
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-wrap: nowrap;
+
+    @include tab {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__list {
+    display: grid;
+    gap: 28px;
+
+    @include tab {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__image {
+    @include tab {
+      width: 456px;
+    }
+    @include desk {
+      width: 624px;
+    }
+  }
+  &__item {
+    display: grid;
+    gap: 8px;
+  }
+  &__name {
+    padding-top: 16px;
+  }
+  &__date {
+    font-size: var(--font-size-p2);
+    line-height: var(--line-height-p2);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-secondary-2);
+    letter-spacing: var(--letter-spacing-normal);
+  }
+}
+
+.blog__icon {
+  width: 10px;
+  height: 10px;
+  color: rgba(2, 101, 220, 1);
+  fill: currentColor;
+}

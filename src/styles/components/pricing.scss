@@ -1,0 +1,30 @@
+@use "../base/mixins" as *;
+.pricing {
+  width: 408px;
+  min-width: 272px;
+  text-align: center;
+
+  @include tab {
+    width: 945px;
+  }
+  @include desk {
+    width: 1200px;
+  }
+  &__title {
+    padding-top: 16px;
+    margin-bottom: 40px;
+
+    @include tab {
+      margin-bottom: 104px;
+    }
+  }
+
+  &__plans {
+    display: grid;
+    gap: 16px;
+
+    @include tab {
+      display: flex;
+    }
+  }
+}

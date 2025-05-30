@@ -48,3 +48,24 @@
     height: 36px;
   }
 }
+
+.icon--badge {
+  width: 24px;
+  height: 24px;
+  color: white;
+  fill: currentColor;
+}
+.icon__trending--left {
+  transform: scaleX(-1);
+}
+.icon__trending--left,
+.icon__trending--right {
+  color: variables(--color-primary);
+  fill: currentColor;
+}
+.icon--check {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  stroke: var(--color-accent);
+}

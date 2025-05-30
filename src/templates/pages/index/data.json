@@ -164,5 +164,127 @@
       "question": "Can I sell my digital products on this marketplace??",
       "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
     }
-  ]
+  ],
+  "blog": {
+    "title": "Latest Expert",
+    "articlesLink": "/blog",
+    "articles": [
+      {
+        "title": "Sonic live",
+        "date": "2024-04-05",
+        "displayDate": "5 APRIL 2024",
+        "images": [
+          {
+            "area": "main",
+            "mobile": "blog-preview-1-mob",
+            "tablet": "blog-preview-1-tab",
+            "desktop": "blog-preview-1-desk",
+            "alt": "Sonic live preview"
+          }
+        ]
+      },
+      {
+        "title": "The Best Dishes",
+        "date": "2024-04-05",
+        "displayDate": "5 APRIL 2024",
+        "images": [
+          {
+            "area": "main",
+            "mobile": "blog-preview-2-mob",
+            "tablet": "blog-preview-2-tab",
+            "desktop": "blog-preview-2-desk",
+            "alt": "The best dishes preview"
+          }
+        ]
+      }
+    ]
+  },
+  "products": {
+    "title": "Popular Products",
+    "label": "Trending",
+    "items": [
+      {
+        "title": "Travel Hero",
+        "category": ["Adventure", "Journey"],
+        "price": "€00.00",
+        "image": "product-1",
+        "alt": "Travel Hero preview",
+        "badge": true,
+        "badgeType": "trophy"
+      },
+      {
+        "title": "Healthcare Pro",
+        "category": ["Medical", "Wellness"],
+        "price": "€15.99",
+        "image": "product-2",
+        "alt": "Healthcare Pro preview",
+        "badge": true,
+        "badgeType": "trophy"
+      },
+      {
+        "title": "Foodish Delight",
+        "category": ["Catering", "Food"],
+        "price": "€00.00",
+        "image": "product-3",
+        "alt": "Foodish Delight preview",
+        "badge": false,
+        "badgeType": "trophy"
+      },
+      {
+        "title": "Real Estate",
+        "category": ["Modern", "Homes"],
+        "price": "€40.99",
+        "image": "product-4",
+        "alt": " Real Estate preview",
+        "badge": false,
+        "badgeType": "trophy"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "PRICING PLAN",
+    "title": "Choose The Perfect Plan for Creative Potential",
+    "plans": [
+      {
+        "name": "Standard Membership",
+        "price": "€14.99",
+        "period": "/Month",
+        "features": [
+          "Enhanced Resource Access",
+          "Monthly Credits",
+          "Priority Customer Support",
+          "Community Features Access"
+        ],
+        "button": "Subscribe",
+        "highlighted": false
+      },
+      {
+        "name": "Plus Membership",
+        "price": "€29.99",
+        "period": "/Month",
+        "features": [
+          "All Standard Benefits",
+          "Increased Monthly Credits",
+          "Early Access to New Releases",
+          "Member-Only Offers"
+        ],
+        "button": "Subscribe",
+        "highlighted": true,
+        "badge": "BEST SELLER"
+      },
+      {
+        "name": "Pro Membership",
+        "price": "€49.99",
+        "period": "/Month",
+        "features": [
+          "All Plus Benefits",
+          "Unlimited Downloads",
+          "Custom Licensing",
+          "Direct Creator Collaboration"
+        ],
+        "button": "Subscribe",
+        "highlighted": false
+      }
+    ]
+  }
 }

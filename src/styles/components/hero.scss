@@ -1,5 +1,6 @@
 @use "../base/mixins" as *;
 .hero {
+  width: 440px;
   padding: 32px 16px 64px;
   background: linear-gradient(
     to bottom,
@@ -14,12 +15,14 @@
   justify-content: center;
 
   @include tab {
+    width: 1024px;
     padding: 120px 40px;
     flex-wrap: nowrap;
     align-items: center;
     gap: 100px;
   }
   @include desk {
+    width: 1440px;
     padding: 120px 80px;
   }
 

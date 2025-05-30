@@ -1,0 +1,24 @@
+@use "../base/mixins" as *;
+.products {
+  display: grid;
+  gap: 48px;
+  &__header {
+    display: grid;
+    gap: 16px;
+  }
+
+  &__controls {
+    display: none;
+  }
+  &__cards {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  &__list {
+    display: flex;
+    gap: 16px;
+    scroll-snap-type: x mandatory;
+    width: max-content;
+    min-width: 100%;
+  }
+}
