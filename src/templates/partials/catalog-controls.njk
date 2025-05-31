@@ -1,0 +1,41 @@
+<div class="filters">
+  <input
+    type="checkbox"
+    id="filters_toggle"
+    class="filters__toggle visibility-hidden"
+  />
+<div class="catalog-controls">
+  <div class="catalog-controls__sort">
+      <label for="sort-select" class="visually-hidden">Sort by</label>
+      <select id="sort-select" class="sort__select" aria-label="Sort products">
+        <option value="best">Best Seller</option>
+        <option value="new">Newest</option>
+        <option value="price_asc">Price: Low to High</option>
+        <option value="price_desc">Price: High to Low</option>
+      </select>
+  </div>
+
+  <label for="filters_toggle" class="button button--primary button--icon-large" aria-label="Toggle filters">
+      <svg class="icon icon--filter">
+        <use href="/img/sprite.svg#filter-lines"></use>
+      </svg>
+   </label>
+
+  <div class="catalog-controls__view-toggle">
+      <button class="view-toggle__button view-toggle__button--active" aria-label="Grid view">
+        <svg class="icon icon--grid">
+          <use href="/img/sprite.svg#grid"></use>
+        </svg>
+      </button>
+      <button class="view-toggle__button" aria-label="List view">
+        <svg class="icon icon--list">
+          <use href="/img/sprite.svg#list"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+<div class="filters__panel">
+    {% include "partials/catalog-filters.njk" %}
+  </div>
+</div>

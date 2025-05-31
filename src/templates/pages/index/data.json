@@ -2,12 +2,113 @@
   "site": {
     "title": "Pixmart"
   },
+
   "nav": [
     { "text": "About", "url": "index" },
     { "text": "Products", "url": "products" },
     { "text": "Creators", "url": "creators" },
     { "text": "Blog", "url": "blog" },
     { "text": "Contact", "url": "contact" }
+  ],
+  "pages": {
+    "products": {
+      "banner": {
+        "titleStart": "Explore Top",
+        "titleAccent": "UI Kits",
+        "titleEnd": "Design Assets"
+      }
+    }
+  },
+  "filters": [
+    {
+      "title": "Categories",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "All Categories",
+          "value": "all-categories",
+          "id": "all_categories"
+        },
+        {
+          "label": "Technology",
+          "value": "technology",
+          "id": "category_technology"
+        },
+        {
+          "label": "Travel & Tourism",
+          "value": "travel",
+          "id": "category_travel"
+        },
+        {
+          "label": "Health & Fitness",
+          "value": "health",
+          "id": "category_health"
+        },
+        {
+          "label": "E-Commerce",
+          "value": "commerce",
+          "id": "category_commerce"
+        },
+        {
+          "label": "E-Education",
+          "value": "education",
+          "id": "category_education"
+        },
+        {
+          "label": "Entertainment",
+          "value": "entertainment",
+          "id": "category_entertainment"
+        },
+        { "label": "Others", "value": "others", "id": "category_others_1" },
+        { "label": "Others", "value": "others", "id": "category_others_2" }
+      ]
+    },
+    {
+      "title": "Format Type",
+      "type": "radio",
+      "options": [
+        { "label": "Figma", "value": "figma", "id": "type_figma" },
+        { "label": "Sketch", "value": "sketch", "id": "type_sketch" },
+        { "label": "Adobe XD", "value": "adobe-xd", "id": "type_adobe_xd" },
+        {
+          "label": "Adobe Photoshop",
+          "value": "photoshop",
+          "id": "type_photoshop"
+        },
+        {
+          "label": "Adobe Illustration",
+          "value": "illustration",
+          "id": "type_illustration"
+        }
+      ]
+    },
+    {
+      "title": "Style",
+      "type": "switch",
+      "options": [
+        {
+          "label": "Minimalist",
+          "value": "minimalist",
+          "id": "style_minimalist"
+        },
+        { "label": "Modern", "value": "modern", "id": "style_modern" },
+        { "label": "Playful", "value": "playful", "id": "style_playful" },
+        { "label": "Dark Mode", "value": "dark-mode", "id": "style_dark_mode" },
+        {
+          "label": "Photocentric",
+          "value": "photocentric",
+          "id": "style_photocentric"
+        }
+      ]
+    },
+    {
+      "title": "Price",
+      "type": "switch",
+      "options": [
+        { "label": "Skin1", "value": "skin1", "id": "skin_1" },
+        { "label": "Skin2", "value": "skin2", "id": "skin_2" }
+      ]
+    }
   ],
   "footer": {
     "text": "Your premium digital assets solution with high quality and comprehensive range of products and services.",

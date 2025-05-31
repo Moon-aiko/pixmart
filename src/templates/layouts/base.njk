@@ -11,6 +11,8 @@
   <div class="wrapper">
     {% include "partials/header.njk" %}
 
+    {% block lead %}{% endblock %}
+
     <main class="content">
       {% block content %}default content{% endblock %}
     </main>

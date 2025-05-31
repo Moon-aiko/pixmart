@@ -1,0 +1,107 @@
+@use "../base/mixins" as *;
+.filters {
+  position: relative;
+  z-index: 1000;
+
+  &__toggle {
+    display: none;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 24px;
+    background: salmon;
+    border: 2px solid gray;
+    cursor: pointer;
+
+    .filters__label {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 28px;
+      color: white;
+    }
+
+    .filters__icon {
+      background-color: red;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      align-items: center;
+
+      .filters__line {
+        background: red;
+        display: block;
+
+        &--top {
+          width: 18px;
+          height: 2px;
+        }
+        &--middle {
+          width: 14px;
+          height: 2px;
+        }
+        &--bottom {
+          width: 10px;
+          height: 2px;
+        }
+      }
+    }
+    @include desk {
+      display: none;
+    }
+  }
+
+  &__panel {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0d0d1f;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    padding: 16px;
+    display: grid;
+    gap: 21px;
+
+    @include desk {
+      transform: none;
+      position: static;
+      height: auto;
+      overflow: visible;
+      padding: 0;
+    }
+  }
+
+  &__toggle:checked ~ .filters__container .filters__panel {
+    transform: translateY(0);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 24px;
+    background: blue;
+    border: 2px solid gray;
+    color: white;
+
+    @include desk {
+      display: none;
+    }
+  }
+
+  &__close {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}

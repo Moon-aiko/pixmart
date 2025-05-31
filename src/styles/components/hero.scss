@@ -1,5 +1,6 @@
 @use "../base/mixins" as *;
 .hero {
+  margin-top: 92px;
   width: 440px;
   padding: 32px 16px 64px;
   background: linear-gradient(
@@ -152,10 +153,6 @@
 
     @include tab {
       grid-column: 1;
-    }
-
-    span {
-      color: var(--color-accent);
     }
   }
   &__actions {
