@@ -1,0 +1,47 @@
+<aside class="catalog-filter">
+  <form class="catalog-filter__form" action="#" method="get">
+    <button type="reset" class="button button--secondary button--large">
+      <svg class="icon icon--close">
+        <use href="/img/sprite.svg#close"></use></svg
+      >Clear all filters
+    </button>
+    {% for filter in filters %}
+    <details class="catalog-filter__block" open>
+      <summary class="catalog-filter__title">{{ filter.title }}</summary>
+      {% if filter.options.length %} {% if filter.type == "checkbox" or
+      filter.type == "radio" %}
+      <ul class="catalog-filter__list catalog-filter__list--{{ filter.type }}">
+        {% for option in filter.options %}
+        <li class="catalog-filter__item">
+          <input type="{{ filter.type }}" id="{{ option.id }}" name="{{
+            filter.id
+          }}" value="{{ option.value }}" {% if filter.type == 'radio' and
+          loop.first %} required {% endif %} />
+          <label class="catalog-filter__label" for="{{ option.id }}">
+            {{ option.label }}
+          </label>
+        </li>
+        {% endfor %}
+      </ul>
+      {% elif filter.type == "switch" %}
+      <div class="catalog-filter__switches">
+        {% for option in filter.options %}
+        <label class="switch">
+          <input
+            type="checkbox"
+            id="{{ option.id }}"
+            name="{{ option.value }}"
+          />
+          <span class="switch__track"></span>
+          {{ option.label }}
+        </label>
+        {% endfor %}
+      </div>
+      {% endif %} {% endif %}
+    </details>
+    {% endfor %}
+    <button type="submit" class="button button--primary button--large">
+      Save
+    </button>
+  </form>
+</aside>

@@ -1,0 +1,9 @@
+{% extends "layouts/base.njk" %}
+{% set page = pages.products %}
+
+{% block lead %}
+  {% include "partials/banner.njk" %}
+{% endblock %}
+{% block content %}
+{% include "partials/catalog-controls.njk" %}
+{% endblock %}
