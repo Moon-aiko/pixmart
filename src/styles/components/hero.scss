@@ -54,7 +54,7 @@
 
       @include tab {
         width: 200px;
-        height: 300px;
+        min-height: 300px;
         margin-top: 0;
       }
       @include desk {

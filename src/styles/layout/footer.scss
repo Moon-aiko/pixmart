@@ -33,7 +33,6 @@
   &__logo {
     display: block;
     width: 300px;
-    height: 58px;
   }
 
   &__middle {
@@ -107,7 +106,7 @@
     width: 100%;
     min-width: 220px;
     max-width: 300px;
-    height: 64px;
+    min-height: 64px;
   }
 
   &__bottom {

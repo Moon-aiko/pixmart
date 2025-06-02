@@ -14,7 +14,7 @@
   }
   @include desk {
     width: 294px;
-    height: 180px;
+    min-height: 180px;
   }
 
   &:hover {
