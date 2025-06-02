@@ -1,8 +1,8 @@
 <section class="blog">
   <div class="blog__container">
     <div class="blog__header">
-      <h2 class="blog__title">{{ blog.title }}</h2>
-      <a href="{{ blog.articlesLink }}" class="subtitle blog__subtitle">
+      <h2 class="main-title main-title--h2">{{ blog.title }}</h2>
+      <a href="{{ blog.articlesLink }}" class="subtitle">
         Explore All Articles
         <svg class="blog__icon">
           <use href="/img/sprite.svg#chevron-right"></use>
@@ -34,7 +34,7 @@
           </picture>
           {% endfor %}
         </div>
-        <h3 class="blog__name">{{ article.title }}</h3>
+        <h3 class="main-title main-title--h3">{{ article.title }}</h3>
         <time class="blog__date" datetime="{{ article.date }}">{{
           article.displayDate
         }}</time>

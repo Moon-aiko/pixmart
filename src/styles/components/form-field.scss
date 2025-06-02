@@ -18,6 +18,7 @@
     padding: var(--space-2) var(--space-3);
     border: 1px solid var(--color-separator-bold);
     border-radius: var(--space-2);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
 
     &::placeholder {
       color: var(--color-secondary-2);
@@ -27,11 +28,12 @@
     }
 
     &:hover {
-      border: 2px solid var(--color-focus);
+      box-shadow: 0 0 0 2px var(--color-focus);
     }
 
     &:focus {
-      border: 3px solid var(--color-focus);
+      box-shadow: 0 0 0 3px var(--color-focus);
+      outline: none;
     }
 
     &:disabled {
@@ -43,7 +45,7 @@
   &__message {
     font-size: var(--font-size-p4);
     font-weight: var(--font-weight-regular);
-    line-height: (var--line-height-p4);
+    line-height: var(--line-height-p4);
     letter-spacing: var(--letter-spacing-normal);
     margin-top: var(--space-1);
 

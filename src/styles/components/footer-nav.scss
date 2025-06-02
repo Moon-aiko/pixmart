@@ -10,7 +10,10 @@
     gap: var(--space-4);
 
     @include tab {
-      min-width: auto;
+      display: flex;
+      flex-direction: column;
+      min-width: 160px;
+      gap: var(--space-4);
     }
   }
 
@@ -31,11 +34,7 @@
     line-height: var(--line-height-p2);
     letter-spacing: var(--letter-spacing-normal);
   }
-  &__title {
-    font-family: var(--font-secondary);
-    font-size: var(--font-size-h5);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-h5);
-    letter-spacing: var(--letter-spacing-normal);
+  h5 {
+    border: 4px solid transparent;
   }
 }

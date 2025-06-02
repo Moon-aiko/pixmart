@@ -1,0 +1,48 @@
+@use "../base/mixins" as *;
+.catalog-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+
+  &__view-toggle {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__sort {
+    flex-grow: 1;
+  }
+  &__container {
+    display: flex;
+    gap: 8px;
+  }
+  &__text {
+    padding-right: 96px;
+
+    @include tab {
+      padding: 0;
+    }
+  }
+}
+.sort__select {
+  width: 360px;
+  height: 40px;
+  padding: 8px 20px;
+  border: 1px solid var(--color-separator-bold);
+  border-radius: 8px;
+  font-size: var(--font-size-p2);
+  line-height: var(--line-height-p2);
+  font-weight: var(--font-weight-semibold);
+  appearance: none;
+  background: white url("/img/chevron-down.svg") no-repeat right 12px center;
+  background-size: 12px;
+  padding-right: 40px;
+
+  @include tab {
+    width: 156px;
+  }
+}

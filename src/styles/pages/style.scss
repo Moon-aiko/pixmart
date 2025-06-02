@@ -28,5 +28,6 @@
 @use "../components/banner";
 @use "../components/filters";
 @use "../components/catalog-filters";
-@use "../components/catalog-main";
+@use "../components/catalog-controls";
 @use "../components/catalog-page";
+@use "../components/active-filters";

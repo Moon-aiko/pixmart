@@ -13,11 +13,11 @@
       <div class="footer__nav">
         {% for section in footer.navSections %}
         <div class="footer-nav__section">
-          <h2 class="footer-nav__title">{{ section.title }}</h2>
+          <h5 class="main-title main-title--h5">{{ section.title }}</h5>
           <ul class="footer-nav__list">
             {% for item in section.links %}
             <li class="footer-nav__item">
-              <a href="{{ item.url }}" class="footer-nav__link">{{
+              <a href="{{ item.url }}" class="link footer-nav__link">{{
                 item.label
               }}</a>
             </li>
@@ -33,7 +33,7 @@
         {% for social in footer.socials %}
         <a
           href="{{ social.url }}"
-          class="button button--secondary button__icon-large socials__link"
+          class="button button--secondary button--icon-large socials__link"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -45,9 +45,10 @@
       </div>
 
       <div class="footer__subscribe">
-        <h4 class="footer__subscribe-title">{{ footer.subscribeTitle }}</h4>
+        <h4 class="main-title main-title--h4">{{ footer.subscribeTitle }}</h4>
         <div class="footer__subscribe-action">
           <form
+          id="subscribe_form"
             class="form-field footer__subscribe-form"
             action="#"
             method="post"
@@ -62,7 +63,7 @@
           <button
             type="submit"
             class="button button--primary button--large"
-            form="subscribe-form"
+            form="subscribe_form"
           >
             {{ footer.subscribeButton }}
           </button>

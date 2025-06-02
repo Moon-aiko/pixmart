@@ -1,5 +1,6 @@
 @use "../base/mixins" as *;
 .category-card {
+  aspect-ratio: 1 / 1;
   width: 194px;
   background-color: var(--bg-alt-2);
   border-radius: var(--space-6);
@@ -13,6 +14,7 @@
   }
   @include desk {
     width: 294px;
+    height: 180px;
   }
 
   &:hover {
@@ -23,11 +25,17 @@
   &__svg {
     width: 48px;
     height: 48px;
-    color: var(----color-accent);
+    color: var(--color-accent);
     stroke: currentColor;
     align-items: left;
-  }
 
+    &:hover {
+      color: var(--bg-base);
+    }
+  }
+  h3 {
+    padding-top: 16px;
+  }
   &__tags span {
     font-size: var(--font-size-p2);
     line-height: var(--line-height-p2);
@@ -36,11 +44,13 @@
     color: var(--color-secondary-2);
   }
   &__tags {
+    padding-top: var(--space-2);
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-2);
     color: var(--color-secondary-2);
     justify-content: flex-start;
+    max-height: 56px;
   }
 
   &__placeholder1 {
@@ -67,10 +77,13 @@
 }
 .categories__grid .category-card:nth-child(4),
 .categories__grid .category-card:nth-child(6) {
-  transform: translateY(-120.5px);
+  transform: translateY(-143.5px);
   position: relative;
 
   @include tab {
-    transform: translateY(-100.5px);
+    transform: translateY(-150px);
+  }
+  @include desk {
+    transform: translateY(-115px);
   }
 }

@@ -38,6 +38,7 @@ a {
   }
   @include desk {
     padding-inline: 80px;
+    justify-items: center;
   }
 }
 .highlight {

@@ -6,8 +6,8 @@
       >Clear all filters
     </button>
     {% for filter in filters %}
-    <details class="catalog-filter__block" open>
-      <summary class="catalog-filter__title">{{ filter.title }}</summary>
+    <div class="catalog-filter__block">
+      <h4 class="main-title main-title--h4">{{ filter.title }}</h4>
       {% if filter.options.length %} {% if filter.type == "checkbox" or
       filter.type == "radio" %}
       <ul class="catalog-filter__list catalog-filter__list--{{ filter.type }}">
@@ -38,7 +38,7 @@
         {% endfor %}
       </div>
       {% endif %} {% endif %}
-    </details>
+    </div>
     {% endfor %}
     <button type="submit" class="button button--primary button--large">
       Save

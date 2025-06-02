@@ -1,10 +1,21 @@
 @use "../base/mixins" as *;
 .feature-cards {
+  padding-top: 64px;
+  width: 100%;
+  overflow: hidden;
+  @include tab {
+    padding-top: 68px;
+  }
+  @include desk {
+    padding-top: 120px;
+  }
+
   &__flex {
     display: flex;
     gap: var(--space-4);
     justify-content: space-between;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
 
     @include tab {

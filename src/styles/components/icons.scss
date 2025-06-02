@@ -58,11 +58,15 @@
 .icon__trending--left {
   transform: scaleX(-1);
 }
+
 .icon__trending--left,
 .icon__trending--right {
+  width: 24px;
+  height: 24px;
   color: var(--color-primary);
   fill: currentColor;
 }
+
 .icon--check {
   width: 16px;
   height: 16px;

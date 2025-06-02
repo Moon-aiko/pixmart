@@ -4,8 +4,9 @@
   box-shadow: 0 4px 40px rgba(29, 57, 95, 0.02);
   padding: 24px 16px;
   position: fixed;
-  height: 92px;
+  min-height: 92px;
   width: 100%;
+  overflow-x: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,12 +19,25 @@
   @include desk {
     padding: var(--space-7) var(--space-13);
   }
+  &__container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    width: 100%;
+
+    @include tab {
+      flex-wrap: nowrap;
+    }
+  }
 
   &__nav {
     height: 100%;
     display: flex;
     gap: var(--space-4);
     align-items: center;
+    min-width: 0;
 
     @include tab {
       flex-direction: row-reverse;
@@ -34,7 +48,9 @@
   &__action {
     height: 100%;
     display: flex;
-    gap: var(--space-2);
     align-items: center;
+    gap: var(--space-2);
+    flex-shrink: 0;
+    min-width: 0;
   }
 }

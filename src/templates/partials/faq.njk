@@ -2,7 +2,7 @@
   <div class="faq__container">
     <div class="faq__left">
       <p class="subtitle">F.A.Q</p>
-      <h2 class="faq__title">Answers to Your Questions</h2>
+      <h2 class="main-title main-title--h2">Answers to Your Questions</h2>
       <button class="button button--secondary button--large">
         Ask Us A Question
       </button>
@@ -13,11 +13,9 @@
       <details class="accordion">
         <summary class="accordion__header">
           {{ faq.question }}
-          <button class="accordion__toggle" aria-label="Toggle">
             <svg class="accordion__icon">
-              <use href="/img/sprite.svg#arrow"></use>
+              <use href="/img/sprite.svg#button-arrow"></use>
             </svg>
-          </button>
         </summary>
         <p class="accordion__content">{{ faq.answer }}</p>
       </details>
