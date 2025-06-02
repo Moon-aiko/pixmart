@@ -110,6 +110,10 @@
       ]
     }
   ],
+  "activeFilters": [
+    { "label": "UI Kit", "id": "filter_ui_kit" },
+    { "label": "Technology", "id": "filter_technology" }
+  ],
   "footer": {
     "text": "Your premium digital assets solution with high quality and comprehensive range of products and services.",
     "subscribeTitle": "Subscribe to Design Newsletter",
@@ -123,41 +127,41 @@
       {
         "title": "Company",
         "links": [
-          { "label": "Homepage v1", "url": "#" },
-          { "label": "Homepage v2", "url": "#" },
-          { "label": "Homepage v3", "url": "#" },
-          { "label": "About Us", "url": "#" },
-          { "label": "About Us", "url": "#" },
-          { "label": "Blog Articles", "url": "#" }
+          { "label": "Homepage v1", "url": "index" },
+          { "label": "Homepage v2", "url": "index" },
+          { "label": "Homepage v3", "url": "index" },
+          { "label": "About Us", "url": "index" },
+          { "label": "About Us", "url": "index" },
+          { "label": "Blog Articles", "url": "blog" }
         ]
       },
       {
         "title": "Products",
         "links": [
-          { "label": "Website", "url": "#" },
-          { "label": "Mobile App", "url": "#" },
-          { "label": "Social Media Feeds", "url": "#" },
-          { "label": "Presentation", "url": "#" },
-          { "label": "Product Mockups", "url": "#" },
-          { "label": "Illustrations", "url": "#" }
+          { "label": "Website", "url": "index" },
+          { "label": "Mobile App", "url": "index" },
+          { "label": "Social Media Feeds", "url": "index" },
+          { "label": "Presentation", "url": "blog" },
+          { "label": "Product Mockups", "url": "products" },
+          { "label": "Illustrations", "url": "blog" }
         ]
       },
       {
         "title": "Account",
         "links": [
-          { "label": "Your Cart", "url": "#" },
-          { "label": "Check Out", "url": "#" },
-          { "label": "Refund Policy", "url": "#" },
-          { "label": "Company Policy", "url": "#" },
-          { "label": "Send A Message", "url": "#" },
-          { "label": "Customer Support", "url": "#" }
+          { "label": "Your Cart", "url": "products" },
+          { "label": "Check Out", "url": "index" },
+          { "label": "Refund Policy", "url": "index" },
+          { "label": "Company Policy", "url": "index" },
+          { "label": "Send A Message", "url": "contact" },
+          { "label": "Customer Support", "url": "contact" }
         ]
       }
     ],
     "bottomLinks": [
-      { "label": "Privacy Policy", "url": "#" },
-      { "label": "Terms and Condition", "url": "#" },
-      { "label": "Site Map", "url": "#" }
+      { "label": "Privacy Policy", "url": "index" },
+      { "label": "Terms and Condition", "url": "index" },
+      { "label": "Site Map", "url": "index" }
     ],
     "copyright": "Copyright © 2024 Pixmart. All rights reserved."
   },
@@ -217,7 +221,8 @@
       "icon": "ui",
       "title": "Templates",
       "tag1": "For all needs",
-      "tag2": "Modern"
+      "tag2": "Modern",
+      "tag3": "frriii"
     },
     {
       "type": "placeholder1"

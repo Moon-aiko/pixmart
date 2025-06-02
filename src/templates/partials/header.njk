@@ -1,76 +1,80 @@
 <header class="header">
-  <div class="header__nav">
-    <nav class="menu">
-      <input
-        type="checkbox"
-        id="menu_toggle"
-        class="menu__input visibility-hidden"
-      />
+  <div class="header__container">
+    <div class="header__nav">
+      <nav class="menu">
+        <input
+          type="checkbox"
+          id="menu_toggle"
+          class="menu__input visibility-hidden"
+        />
 
-      <label for="menu_toggle" class="menu__opener" aria-label="Open menu">
-        <span class="menu__line"></span>
-      </label>
+        <label for="menu_toggle" class="menu__opener" aria-label="Open menu">
+          <span class="menu__line"></span>
+        </label>
 
-      <div class="menu__panel">
-        <ul class="menu__list">
-          {% for item in nav %}
-          <li class="menu__item">
-            <a href="{{ item.url }}.html" class="menu__link">{{ item.text }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </nav>
-
-    <a href="/" class="header__logo">
-      <svg class="icon icon--logo">
-        <use href="img/sprite.svg#logo"></use>
-      </svg>
-    </a>
-  </div>
-
-  <div class="header__action">
-    <div class="search-wrapper">
-      <input
-        type="checkbox"
-        id="search_toggle"
-        class="search-wrapper__toggle visibility-hidden"
-      />
-
-      <form class="search-wrapper__form" action="#" method="get">
-        <div class="form-field">
-          <label for="search" class="visually-hidden">Search</label>
-          <input
-            type="search"
-            id="search"
-            name="query"
-            class="search__input form-field__input"
-            placeholder="Search for Digital Assets"
-            required
-          />
+        <div class="menu__panel">
+          <ul class="menu__list">
+            {% for item in nav %}
+            <li class="menu__item">
+              <a href="{{ item.url }}.html" class="link menu__link">{{
+                item.text
+              }}</a>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
-        <button
-          type="submit"
-          class="visually-hidden"
-          aria-label="Search"
-        ></button>
-      </form>
+      </nav>
 
-      <label
-        for="search_toggle"
-        class="button button--secondary button--icon-medium"
-        aria-label="Toggle search"
-      >
-        <svg class="icon icon--search">
-          <use href="/img/sprite.svg#search"></use>
+      <a href="/" class="header__logo">
+        <svg class="icon icon--logo">
+          <use href="img/sprite.svg#logo"></use>
         </svg>
-      </label>
+      </a>
     </div>
 
-    <a href="#" class="button button--primary button--icon-medium">
-      <svg class="icon icon--bag">
-        <use href="/img/sprite.svg#bag"></use>
-      </svg>
-    </a>
+    <div class="header__action">
+      <div class="search-wrapper">
+        <input
+          type="checkbox"
+          id="search_toggle"
+          class="search-wrapper__toggle visibility-hidden"
+        />
+
+        <form class="search-wrapper__form" action="#" method="get">
+          <div class="form-field">
+            <label for="search" class="visually-hidden">Search</label>
+            <input
+              type="search"
+              id="search"
+              name="query"
+              class="search__input form-field__input"
+              placeholder="Search for Digital Assets"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="visually-hidden"
+            aria-label="Search"
+          ></button>
+        </form>
+
+        <label
+          for="search_toggle"
+          class="search-wrapper__button button button--secondary button--icon-medium"
+          aria-label="Toggle search"
+        >
+          <svg class="icon icon--search">
+            <use href="/img/sprite.svg#search"></use>
+          </svg>
+        </label>
+      </div>
+
+      <a href="#" class="button button--primary button--icon-medium">
+        <svg class="icon icon--bag">
+          <use href="/img/sprite.svg#bag"></use>
+        </svg>
+      </a>
+    </div>
   </div>
 </header>

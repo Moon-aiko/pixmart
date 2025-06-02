@@ -1,5 +1,6 @@
 <section class="hero">
-  <div class="hero__images">
+  <div class="hero__inner">
+    <div class="hero__images">
     {% for image in hero.images %}
     <picture class="hero__picture hero__picture--{{ image.area }}">
       <source
@@ -33,7 +34,7 @@
   </div>
 
   <div class="hero__content">
-    <h1 class="hero__title">
+    <h1 class="main-title main-title--h1">
       {{ hero.titleStart }}
       <span class="highlight">{{ hero.titleAccent }}</span> {{ hero.titleEnd }}
     </h1>
@@ -56,4 +57,5 @@
       </a>
     </div>
   </div>
+</div>
 </section>

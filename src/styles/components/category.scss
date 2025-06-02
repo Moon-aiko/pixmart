@@ -7,6 +7,7 @@
 
   @include tab {
     flex-direction: row-reverse;
+    align-items: center;
     max-width: 1024px;
     flex-wrap: nowrap;
   }
@@ -19,19 +20,13 @@
     justify-items: start;
   }
 
-  &__subtitle {
-    font-size: var(--font-size-p2);
-    line-height: var(--line-height-p2);
-    font-weight: var(--font-weight-regular);
-    letter-spacing: (--letter-spacing-normal);
-    color: var(--color-focus-2);
-  }
   &__text {
     font-size: var(--font-size-p1);
     line-height: var(--line-height-p1);
     font-weight: var(--font-weight-regular);
     letter-spacing: (--letter-spacing-normal);
     color: var(--color-secondary);
+    padding-bottom: 16px;
   }
   &__grid {
     display: grid;

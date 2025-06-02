@@ -1,0 +1,29 @@
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block: var(--space-4);
+}
+
+.filter-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-separator-bold);
+  background-color: var(--color-bg);
+  border-radius: 12px;
+  font-size: var(--font-size-p2);
+  font-weight: 500;
+  cursor: pointer;
+
+  &__remove {
+    font-size: 16px;
+    line-height: 1;
+    color: var(--color-secondary);
+  }
+
+  &:hover {
+    background-color: var(--color-accent-10);
+  }
+}

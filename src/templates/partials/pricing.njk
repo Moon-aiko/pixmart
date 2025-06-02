@@ -1,7 +1,7 @@
 <section class="pricing">
   <div class="container">
     <span class="subtitle">{{ pricing.label }}</span>
-    <h2 class="pricing__title">{{ pricing.title }}</h2>
+    <h2 class="main-title main-title--h2">{{ pricing.title }}</h2>
     <div class="pricing__plans">
       {% for plan in pricing.plans %}
       <article
@@ -10,10 +10,10 @@
         {% if plan.badge %}
         <div class="badge badge--bestseller">{{ plan.badge }}</div>
         {% endif %}
-        <h3 class="pricing-card__name">{{ plan.name }}</h3>
+        <h5 class="main-title main-title--h5">{{ plan.name }}</h5>
         <p class="pricing-card__price">
-          <span class="pricing-card__value">{{ plan.price }}</span>
-          <span class="pricing-card__period"> {{ plan.period }}</span>
+          <span class="main-title main-title--h2">{{ plan.price }}</span>
+          <span class="main-text main-text--p2"> {{ plan.period }}</span>
         </p>
         <ul class="pricing-card__features">
           {% for feature in plan.features %}

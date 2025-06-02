@@ -2,14 +2,24 @@
 .products {
   display: grid;
   gap: 48px;
+
   &__header {
     display: grid;
     gap: 16px;
   }
-
   &__controls {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
+  &__buttons {
+    display: none;
+    @include tab {
+      display: flex;
+      gap: var(--space-3);
+    }
+  }
+
   &__cards {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;

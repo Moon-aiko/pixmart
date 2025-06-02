@@ -1,5 +1,6 @@
 @use "../base/mixins" as *;
 .pricing-card {
+  align-items: stretch;
   position: relative;
   background: var(--bg-base);
   border-radius: 20px;
@@ -22,29 +23,6 @@
     @include tab {
       transform: translateY(-56px);
     }
-  }
-
-  &__name {
-    font-family: var(--font-secondary);
-    font-size: var(--font-size-h5);
-    line-height: var(--line-height-h5);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--letter-spacing-normal);
-  }
-
-  &__value {
-    font-family: var(--font-secondary);
-    font-size: var(--font-size-h2);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-h2);
-    letter-spacing: var(--letter-spacing-tight);
-  }
-
-  &__period {
-    font-size: var(--font-size-p2);
-    line-height: var(-line-height-p2);
-    letter-spacing: var(--letter-spacing-normal);
-    font-weight: var(--font-weight-regular);
   }
 
   &__features {
