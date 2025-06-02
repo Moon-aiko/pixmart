@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 256px;
+  min-height: 256px;
   display: flex;
   align-items: center;
 
@@ -16,7 +16,7 @@
 
   @include tab {
     background-image: url("../img/heading-tab-1x.webp");
-    height: 290px;
+    min-height: 290px;
 
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url("../img/heading-tab-2x.webp");

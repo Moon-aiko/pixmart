@@ -47,7 +47,7 @@
       position: absolute;
       transform: translate(-20%, 20%);
       width: 689px;
-      height: 498px;
+      min-height: 498px;
       background: radial-gradient(
         ellipse,
         rgba(15, 115, 246, 0.2) 0%,

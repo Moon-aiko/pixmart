@@ -9,7 +9,7 @@
   width: max-content;
 
   &__icon {
-    height: 224px;
+    min-height: 224px;
     width: 224px;
     border-radius: 20px;
     background-color: var(--bg-alt-2);
