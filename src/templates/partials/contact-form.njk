@@ -1,0 +1,54 @@
+<section class="contact-form">
+  <form class="form-field">
+    <label for="fullname">Full Name</label>
+    <input
+      id="fullname"
+      name="fullname"
+      type="text"
+      placeholder="Amelia Robert Johnson"
+      required
+    />
+
+    <label for="email">Email Address</label>
+    <input
+      id="email"
+      name="email"
+      type="email"
+      placeholder="amelia.robertjohnson@pixmart.com"
+      required
+    />
+
+    <label for="subject">Subject</label>
+    <select id="subject" name="subject" required>
+      <option>General Inquiry</option>
+      <option>Support</option>
+      <option>Business</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      name="message"
+      placeholder="Enter your message ..."
+      required
+    ></textarea>
+
+    <div class="contact-form__privacy">
+      <div class="contact-form__checkbox">
+        <input id="newsletter" name="newsletter" type="checkbox" />
+        <label for="newsletter">Subscribe me to Newsletter</label>
+      </div>
+
+      <div class="contact-form__checkbox">
+        <input id="privacy" name="privacy" type="checkbox" required checked />
+        <label for="privacy">I have read the User & Privacy Policy</label>
+      </div>
+    </div>
+    <button
+      type="submit"
+      class="contact-form__button button button--primary button--large"
+    >
+      Send Message
+    </button>
+  </form>
+</section>

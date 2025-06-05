@@ -19,6 +19,16 @@
       align-items: center;
     }
   }
+  &__subtitle {
+    color: var(--color-accent);
+    font-size: var(--font-size-p2);
+    line-height: var(--line-height-p2);
+    letter-spacing: var(--letter-spacing-normal);
+    font-weight: var(--font-weight-semibold);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
   &__list {
     display: grid;
     gap: 28px;
@@ -51,11 +61,4 @@
     color: var(--color-secondary-2);
     letter-spacing: var(--letter-spacing-normal);
   }
-}
-
-.blog__icon {
-  width: 10px;
-  height: 10px;
-  color: rgba(2, 101, 220, 1);
-  fill: currentColor;
 }

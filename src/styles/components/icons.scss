@@ -1,4 +1,9 @@
 @use "../base/mixins" as *;
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  flex-shrink: 0;
+}
 .icon--logo {
   fill: var(--color-accent);
   width: 108px;
@@ -80,4 +85,25 @@
   color: var(--color-primary);
   fill: currentColor;
   stroke: currentColor;
+}
+.icon--quote {
+  width: 64px;
+  height: 64px;
+  color: var(--color-focus-2);
+  fill: currentColor;
+}
+.icon--chevron {
+  width: 16px;
+  height: 16px;
+  color: var(--color-focus-2);
+  fill: currentColor;
+  overflow: visible;
+  display: inline-block;
+}
+.icon--contact,
+.icon--map {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent);
+  fill: currentColor;
 }

@@ -3,22 +3,36 @@
 .form-field {
   display: flex;
   flex-direction: column;
-  gap: var(--space-1);
+  gap: 6px;
 
-  &__label {
+  label {
     font-size: var(--font-size-p3);
     line-height: var(--line-height-p3);
     font-weight: var(--font-weight-regular);
-    color: var(--color-label);
+    color: var(--color-primary);
   }
 
-  &__input {
+  input,
+  select,
+  textarea {
     background-color: var(--color-bg);
     min-height: 40px;
-    padding: var(--space-2) var(--space-3);
+    padding: var(--space-6);
     border: 1px solid var(--color-separator-bold);
     border-radius: var(--space-2);
+    font-size: var(--font-size-p3);
+    line-height: var(--line-height-p3);
+    color: var(--color-primary);
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    input {
+      margin-bottom: 14px;
+    }
 
     &::placeholder {
       color: var(--color-secondary-2);
@@ -62,10 +76,11 @@
     }
   }
 
-  &--invalid &__input {
+  &--invalid input,
+  &--invalid select,
+  &--invalid textarea {
     border-color: var(--color-error);
   }
-
   &--validated {
     border-color: var(--color-separator-bold);
   }
@@ -73,5 +88,14 @@
   &--disabled {
     background-color: var(--color-disabled-bg);
     color: var(--color-disabled-text);
+  }
+
+  .form-field--inline {
+    flex-direction: row;
+    align-items: center;
+
+    label {
+      margin-left: 8px;
+    }
   }
 }

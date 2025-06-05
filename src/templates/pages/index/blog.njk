@@ -2,7 +2,12 @@
 {% set page = pages.products %}
 
 {% block content %}
+<div class="article">
  {% include "partials/article-hero.njk" %}
+ <div class="article__container">
  {% include "partials/article-sidebar.njk" %}
  {% include "partials/article-content.njk" %}
+ </div>
+  </div>
+ {% include "partials/article-blog.njk" %}
 {% endblock %}

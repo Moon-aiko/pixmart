@@ -1,0 +1,19 @@
+@use "../base/mixins" as *;
+.contact-form {
+  min-width: 408px;
+  border-radius: 20px;
+  padding: 32px;
+  background-color: var(--bg-base);
+  box-shadow: 0 4px 40px 0 rgba(29, 57, 95, 0.08);
+
+  &__checkbox {
+    display: flex;
+    gap: var(--space-1);
+    align-items: center;
+  }
+
+  &__button {
+    margin-top: 32px;
+    align-self: flex-start;
+  }
+}

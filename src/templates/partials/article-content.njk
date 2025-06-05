@@ -1,14 +1,15 @@
-<section class="article__content">
-  {% for block in article.content %}
-    {% if block.type == "paragraph" %}
-      <p class="article__paragraph">{{ block.text }}</p>
-    
-    {% elif block.type == "heading" %}
-      <h{{ block.level }} class="article__heading article__heading--h{{ block.level }}">
-        {{ block.text }}
-      </h{{ block.level }}>
+<section class="article-content">
+  {% for block in article.content %} {% if block.type == "paragraph" %}
+  <p class="main text main-text--p1 article-content__paragraph">
+    {{ block.text }}
+  </p>
 
-    {% if block.type == "picture" %}
+  {% elif block.type == "heading" %}
+  <h2 class="main-title main-title--h4 article-content__heading">
+    {{ block.text }}
+  </h2>
+
+  {% elif block.type == "picture" %}
   <figure class="article-content__image-block">
     <picture class="article-content__picture">
       <source
@@ -28,20 +29,25 @@
         class="article-content__image"
       />
     </picture>
-    <figcaption class="article-content__caption">
+    <figcaption class="main-text main-text--p2 article-content__caption">
       {{ block.caption }}
       {% if block.link %}
-        <a href="{{ block.link.url }}" class="article-content__link">{{ block.link.text }}</a>
+      <a href="{{ block.link.url }}" class="link article-content__link">{{
+        block.link.text
+      }}</a>
       {% endif %}
     </figcaption>
   </figure>
-{% endif %}
 
+  {% elif block.type == "quote" %}
+  <blockquote class="article-content__quote">
+    <svg class="icon--quote" aria-hidden="true">
+      <use href="/img/sprite.svg#quote-left"></use>
+    </svg>
+    <p class="main-title main-title--h4 article-content__quote-text">
+      {{ block.text }}
+    </p>
+  </blockquote>
 
-    {% elif block.type == "quote" %}
-      <blockquote class="article-content__quote">
-        {{ block.text }}
-      </blockquote>
-    {% endif %}
-  {% endfor %}
+  {% endif %} {% endfor %}
 </section>

@@ -54,6 +54,7 @@
 
   &__catalog {
     left: 16px;
+    top: 16px;
     padding: 16px;
     font-size: var(--font-size-p2);
     line-height: var(--line-height-p2);
@@ -76,5 +77,20 @@
       background-color: var(--color-accent);
       color: var(--color-white);
     }
+  }
+  &__blog {
+    left: 16px;
+    bottom: -20px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    width: 64px;
+    height: 40px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 100px;
+    font-size: var(--font-size-p2);
+    line-height: var(--line-height-p2);
+    letter-spacing: var(--letter-spacing-normal);
+    font-weight: var(--font-weight-medium);
   }
 }

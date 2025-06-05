@@ -32,17 +32,32 @@
   }
 }
 .main-text {
+  &--p1 {
+    font-size: var(--font-size-p1);
+    line-height: var(--line-height-p1);
+    letter-spacing: var(--letter-spacing-normal);
+    font-weight: var(--font-weight-regular);
+  }
+
   &--p2 {
     font-size: var(--font-size-p2);
-    line-height: var(-line-height-p2);
+    line-height: var(--line-height-p2);
     letter-spacing: var(--letter-spacing-normal);
     font-weight: var(--font-weight-regular);
   }
   &--p3 {
     font-size: var(--font-size-p3);
-    line-height: var(-line-height-p3);
+    line-height: var(--line-height-p3);
     letter-spacing: var(--letter-spacing-normal);
     font-weight: var(--font-weight-regular);
+  }
+}
+.link-text {
+  &--l1 {
+    font-size: var(--font-size-p1);
+    line-height: var(--line-height-p1);
+    letter-spacing: var(--letter-spacing-normal);
+    font-weight: var(--font-weight-semibold);
   }
 }
 
