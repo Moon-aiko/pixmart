@@ -1,0 +1,22 @@
+.article {
+  &__hero {
+    margin-top: 92px;
+  }
+  &__badge {
+    background-color: var(--color-accent);
+    padding: 16px;
+    border-radius: 100px;
+    color: var(--color-white);
+    width: 146px;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: left;
+  }
+  &__image {
+    width: 408px;
+    min-width: 127px;
+    border-radius: 20px;
+  }
+}

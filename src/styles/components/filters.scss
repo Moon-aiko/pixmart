@@ -13,13 +13,22 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #0d0d1f;
-    transform: translateY(-100%);
+    background-color: var(--bg-base);
+    transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
     overflow-y: auto;
     padding: 1.5rem;
     display: grid;
     gap: 21px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+
+    @include tab {
+      width: 50%;
+    }
 
     @include desk {
       transform: none;
@@ -31,7 +40,7 @@
   }
 
   &__toggle:checked ~ .filters__panel {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 
   &__header {
@@ -43,9 +52,15 @@
     min-height: 88px;
     width: 440px;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--bg-base);
     box-shadow: 0 4px 40px 0 rgba(29, 57, 95, 0.02);
 
+    @include desk {
+      display: none;
+    }
+  }
+  &__button-save,
+  &__button {
     @include desk {
       display: none;
     }

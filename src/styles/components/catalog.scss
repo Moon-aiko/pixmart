@@ -1,0 +1,15 @@
+@use "../base/mixins" as *;
+.catalog {
+  display: flex;
+  flex-direction: column;
+
+  @include desk {
+    display: grid;
+    grid-template-columns: 217px 1fr;
+    gap: var(--space-8);
+  }
+}
+.catalog-content {
+  display: grid;
+  gap: 48px;
+}

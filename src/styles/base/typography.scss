@@ -38,7 +38,14 @@
     letter-spacing: var(--letter-spacing-normal);
     font-weight: var(--font-weight-regular);
   }
+  &--p3 {
+    font-size: var(--font-size-p3);
+    line-height: var(-line-height-p3);
+    letter-spacing: var(--letter-spacing-normal);
+    font-weight: var(--font-weight-regular);
+  }
 }
+
 .subtitle {
   font-size: var(--font-size-p2);
   line-height: var(--line-height-p2);

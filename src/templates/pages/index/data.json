@@ -392,5 +392,196 @@
         "highlighted": false
       }
     ]
+  },
+  "catalog": {
+    "products": [
+      {
+        "title": "Galaxy NFT Art",
+        "price": "$129.00",
+        "image": "product-1",
+        "badgeType": "sold-out",
+        "badgeLabel": "SOLD OUT",
+        "category": ["3D", "Digital"]
+      },
+      {
+        "title": "Digital Collectible",
+        "price": "$149.00",
+        "image": "product-2",
+        "badgeType": "new",
+        "badgeLabel": "NEW",
+        "category": ["3D", "Digital"]
+      },
+      {
+        "title": "Rare Sculpture",
+        "price": "$299.00",
+        "image": "product-3",
+        "badgeType": "popular",
+        "badgeLabel": "POPULAR",
+        "category": ["3D", "Digital"]
+      },
+      {
+        "title": "Rare Sculpture",
+        "price": "$299.00",
+        "image": "product-3",
+        "badgeType": "popular",
+        "badgeLabel": "POPULAR",
+        "category": ["3D", "Digital"]
+      },
+      {
+        "title": "Rare Sculpture",
+        "price": "$299.00",
+        "image": "product-3",
+        "badgeType": "new",
+        "badgeLabel": "NEW",
+        "category": ["3D", "Digital"]
+      },
+      {
+        "title": "Rare Sculpture",
+        "price": "$299.00",
+        "image": "product-3",
+        "badgeType": "sold-out",
+        "badgeLabel": "SOLD OUT",
+        "category": ["3D", "Digital"]
+      },
+      {
+        "title": "Rare Sculpture",
+        "price": "$299.00",
+        "image": "product-3",
+        "badgeType": "sold-out",
+        "badgeLabel": "SOLD OUT",
+        "category": ["3D", "Digital"]
+      },
+      {
+        "title": "Rare Sculpture",
+        "price": "$299.00",
+        "image": "product-3",
+        "badgeType": "new",
+        "badgeLabel": "NEW",
+        "category": ["3D", "Digital"]
+      },
+      {
+        "title": "Rare Sculpture",
+        "price": "$299.00",
+        "image": "product-3",
+        "badgeType": "popular",
+        "badgeLabel": "POPULAR",
+        "category": ["3D", "Digital"]
+      },
+      {
+        "title": "Rare Sculpture",
+        "price": "$299.00",
+        "image": "product-3",
+        "badgeType": "popular",
+        "badgeLabel": "POPULAR",
+        "category": ["3D", "Digital"]
+      },
+      {
+        "title": "Rare Sculpture",
+        "price": "$299.00",
+        "image": "product-3",
+        "badgeType": "new",
+        "badgeLabel": "NEW",
+        "category": ["3D", "Digital"]
+      },
+      {
+        "title": "Rare Sculpture",
+        "price": "$299.00",
+        "image": "product-3",
+        "badgeType": "sold-out",
+        "badgeLabel": "SOLD OUT",
+        "category": ["3D", "Digital"]
+      }
+    ]
+  },
+  "article": {
+    "badge": "Typography",
+    "title": "Mastering the Art of Typography: Tips for Eye-Catching Designs for 2024",
+    "image": {
+      "desktop": "office-desk",
+      "tablet": "office-tab",
+      "mobile": "office-mob",
+      "alt": "office"
+    },
+    "author": {
+      "name": "Emma Clarke",
+      "image": "emma"
+    },
+    "date": "April 10, 2024",
+    "categories": [
+      { "name": "Graphic Design Trends", "url": "blog", "active": false },
+      { "name": "Typography & Fonts", "url": "blog", "active": true },
+      { "name": "UI/UX Design", "url": "blog", "active": false },
+      { "name": "Branding & Identity", "url": "blog", "active": false },
+      { "name": "Illustration", "url": "blog", "active": false },
+      { "name": "Digital Marketing", "url": "blog", "active": false }
+    ],
+    "latest": [
+      { "title": "Text", "date": "March 15, 2024", "url": "blog" },
+      { "title": "Text", "date": "March 15, 2024", "url": "blog" }
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "In the vast expanse of graphic design, typography stands as a pivotal element that can make or break the visual appeal of any project. Understanding the art of typography is essential for creating designs that not only attract attention but also communicate effectively. Here, we delve into practical tips that will help you master typography, transforming your creations into eye-catching masterpieces."
+      },
+      {
+        "type": "heading",
+        "level": 1,
+        "text": "1. Understand Typeface Selection"
+      },
+      {
+        "type": "paragraph",
+        "text": "The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal, lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts, on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish to convey and the medium through which it will be communicated."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "2. Create a Typographic Hierarchy"
+      },
+      {
+        "type": "paragraph",
+        "text": "A well-defined typographic hierarchy organizes information, making it easier for readers to navigate through the content. Use different font sizes, weights, and styles to differentiate between headings, subheadings, and body text. This hierarchy not only improves readability but also adds visual interest to your next future design."
+      },
+      {
+        "type": "picture",
+        "src": {
+          "desktop": "article-img-desk",
+          "tablet": "article-img-tab",
+          "mobile": "article-img-mob"
+        },
+        "alt": "Alt text",
+        "caption": "Image caption",
+        "link": {
+          "url": "https://example.com",
+          "text": "source"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "3. Experiment with Alignment"
+      },
+      {
+        "type": "paragraph",
+        "text": "While center and right alignments have their place, left-aligned text is generally the most legible and comfortable for readers, especially for longer passages. However, don’t shy away from experimenting with different alignments in headings or callouts to add dynamism to your layout.."
+      },
+      {
+        "type": "heading",
+        "level": 4,
+        "text": "4. Embrace White Space"
+      },
+      {
+        "type": "paragraph",
+        "text": "White space, or negative space, is a powerful tool in typography. It helps in decluttering designs and allows each typographic element to breathe. Proper use of white space can significantly improve the overall balance and composition of your design."
+      },
+      {
+        "type": "quote",
+        "text": "Typography is not just the art of arranging type but the craft of breathing life into characters, turning words into stories that captivate the soul."
+      },
+      {
+        "type": "paragraph",
+        "text": "Typography is an art that speaks volumes beyond the mere letters on a surface. By applying these tips, designers can elevate their work from mere... "
+      }
+    ]
   }
 }

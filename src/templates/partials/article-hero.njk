@@ -1,0 +1,23 @@
+<section class="article__hero">
+  <div class="main main-text--p2 article__badge">{{ article.badge }}</div>
+  <h1 class="main-title main-title--h1">{{ article.title }}</h1>
+
+  <picture class="article__picture">
+    <source
+      srcset="/img/{{ article.image.desktop }}-1x.webp, /img/{{ article.image.desktop }}-2x.webp 2x"
+      media="(min-width: 1440px)"
+      type="image/webp"
+    />
+    <source
+      srcset="/img/{{ article.image.tablet }}-1x.webp, /img/{{ article.image.tablet }}-2x.webp 2x"
+      media="(min-width: 1024px)"
+      type="image/webp"
+    />
+    <img
+      src="/img/{{ article.image.mobile }}-1x.webp"
+      srcset="/img/{{ article.image.mobile }}-1x.webp, /img/{{ article.image.mobile }}-2x.webp 2x"
+      alt="{{ article.image.alt }}"
+      class="article__image"
+    />
+  </picture>
+</section>

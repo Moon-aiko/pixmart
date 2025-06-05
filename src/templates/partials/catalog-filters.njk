@@ -1,47 +1,36 @@
-<aside class="catalog-filter">
-  <form class="catalog-filter__form" action="#" method="get">
-    <button type="reset" class="button button--secondary button--large">
-      <svg class="icon icon--close">
-        <use href="/img/sprite.svg#close"></use></svg
-      >Clear all filters
-    </button>
-    {% for filter in filters %}
-    <div class="catalog-filter__block">
-      <h4 class="main-title main-title--h4">{{ filter.title }}</h4>
-      {% if filter.options.length %} {% if filter.type == "checkbox" or
-      filter.type == "radio" %}
-      <ul class="catalog-filter__list catalog-filter__list--{{ filter.type }}">
-        {% for option in filter.options %}
-        <li class="catalog-filter__item">
-          <input type="{{ filter.type }}" id="{{ option.id }}" name="{{
-            filter.id
-          }}" value="{{ option.value }}" {% if filter.type == 'radio' and
-          loop.first %} required {% endif %} />
-          <label class="catalog-filter__label" for="{{ option.id }}">
-            {{ option.label }}
-          </label>
-        </li>
-        {% endfor %}
-      </ul>
-      {% elif filter.type == "switch" %}
-      <div class="catalog-filter__switches">
-        {% for option in filter.options %}
-        <label class="switch">
-          <input
-            type="checkbox"
-            id="{{ option.id }}"
-            name="{{ option.value }}"
-          />
-          <span class="switch__track"></span>
+<div class="catalog-filter">
+  {% for filter in filters %}
+  <div class="catalog-filter__block">
+    <h4 class="main-title main-title--h4">{{ filter.title }}</h4>
+    {% if filter.options.length %} {% if filter.type == "checkbox" or
+    filter.type == "radio" %}
+    <ul class="catalog-filter__list catalog-filter__list--{{ filter.type }}">
+      {% for option in filter.options %}
+      <li class="catalog-filter__item">
+        <input type="{{ filter.type }}" id="{{ option.id }}" name="{{
+          filter.id
+        }}" value="{{ option.value }}" {% if filter.type == 'radio' and
+        loop.first %} required {% endif %} />
+        <label
+          class="main-text main-text--p3 catalog-filter__label"
+          for="{{ option.id }}"
+        >
           {{ option.label }}
         </label>
-        {% endfor %}
-      </div>
-      {% endif %} {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% elif filter.type == "switch" %}
+    <div class="catalog-filter__switches">
+      {% for option in filter.options %}
+      <label class="switch">
+        <input type="checkbox" id="{{ option.id }}" name="{{ option.value }}" />
+        <span class="switch__track"></span>
+        {{ option.label }}
+      </label>
+      {% endfor %}
     </div>
-    {% endfor %}
-    <button type="submit" class="button button--primary button--large">
-      Save
-    </button>
-  </form>
-</aside>
+    {% endif %} {% endif %}
+  </div>
+  {% endfor %}
+</div>

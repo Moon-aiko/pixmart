@@ -1,0 +1,19 @@
+.catalog-filter__label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+  background-color: white;
+  flex-shrink: 0;
+}
+
+.catalog-filter__checkbox:checked + .catalog-filter__label::before {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  background-image: url("/img/sprite.svg#check"); // или замени на base64/svg
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+}

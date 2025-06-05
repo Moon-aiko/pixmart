@@ -1,0 +1,46 @@
+<aside class="article-sidebar">
+<div class="article-sidebar__author">
+  <div class="article-sidebar__ava">
+    <img
+      src="/img/{{ article.author.image }}-1x.webp"
+      srcset="/img/{{ article.author.image }}-1x.webp, /img/{{ article.author.image}}-2x.webp 2x"
+      alt="{{ article.author.name }}"
+      class="article-sidebar__avatar"
+    />
+</div>
+<div class="rticle-sidebar__info">
+    <p class="main-title main-title--h5 article-sidebar__name">{{ article.author.name }}</p>
+    <p class="main-text main-text--p2 article-sidebar__date">{{ article.date }}</p>
+  </div>
+  </div>
+
+   
+  <hr class="article-sidebar__divider" />
+
+  <div class="article-sidebar__section">
+    <h3 class="main-title main-title--h4 article-sidebar__heading">Categories</h3>
+    <ul class="main-text main-text--p2 article-sidebar__list">
+      {% for cat in article.categories %}
+        <li>
+          <a href="{{ cat.url }}" class="article-sidebar__link{% if cat.active %} article-sidebar__link--active{% endif %}">
+            {{ cat.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <hr class="article-sidebar__divider" />
+
+  <div class="article-sidebar__section">
+    <h3 class="main-title main-title--h4 article-sidebar__heading">Latest Articles</h3>
+    <ul class="article-sidebar__article-list">
+      {% for item in article.latest %}
+        <li class="article-sidebar__latest">
+          <a href="{{ item.url }}" class="main-title main-title--h4 article-sidebar__article-link">{{ item.title }}</a>
+          <p class="main-text main-text--p2 article-sidebar__article-date">{{ item.date }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</aside>
