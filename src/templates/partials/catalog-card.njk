@@ -1,8 +1,9 @@
 <div class="catalog-fadeout-wrapper">
   <section class="catalog-card__list">
     {% for item in catalog.products %}
-    <article class="catalog-card{% if item.badgeType == 'sold-out' %} catalog-card--sold-out{% endif %}">
-      
+    <article
+      class="catalog-card{% if item.badgeType == 'sold-out' %} catalog-card--sold-out{% endif %}"
+    >
       {% if item.badgeType == 'sold-out' %}
       <div class="catalog-card__overlay"></div>
       {% endif %}
@@ -29,8 +30,7 @@
           {% if item.category %}
           <p class="catalog-card__category">
             {% for cat in item.category %}
-              {{ cat }}{% if not loop.last %} · {% endif %}
-            {% endfor %}
+            {{ cat }}{% if not loop.last %} · {% endif %} {% endfor %}
           </p>
           {% endif %}
         </div>

@@ -27,8 +27,7 @@
   </div>
   <div class="products__cards card-scroll__container">
     <div class="products__list">
-      {% for item in products.items %}
-      {% include "partials/product-card.njk" %}
+      {% for item in products.items %} {% include "partials/product-card.njk" %}
       {% endfor %}
     </div>
   </div>

@@ -2,7 +2,10 @@
   <div class="article-blog__container">
     <div class="article-blog__header">
       <h2 class="main-title main-title--h2">Related Articles</h2>
-      <a href="{{ article.relatedArticles.link }}" class="link article-blog__subtitle">
+      <a
+        href="{{ article.relatedArticles.link }}"
+        class="link article-blog__subtitle"
+      >
         Explore All Articles
         <svg class="icon icon--chevron" role="img" aria-hidden="true">
           <use href="/img/sprite.svg#chevron-right"></use>
@@ -24,7 +27,9 @@
           <span class="badge badge__blog">TAG</span>
         </div>
         <h3 class="main-title main-title--h5">{{ related.title }}</h3>
-        <time class="blog__date" datetime="{{ related.date }}">{{ related.displayDate }}</time>
+        <time class="blog__date" datetime="{{ related.date }}">{{
+          related.displayDate
+        }}</time>
       </article>
       {% endfor %}
     </div>

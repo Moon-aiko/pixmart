@@ -4,20 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg"/>
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
     <title>{{ site.title }}</title>
   </head>
   <body>
-  <div class="wrapper">
-    {% include "partials/header.njk" %}
+    <div class="wrapper">
+      {% include "partials/header.njk" %} {% block lead %}{% endblock %}
 
-    {% block lead %}{% endblock %}
+      <main class="content">
+        {% block content %}default content{% endblock %}
+      </main>
 
-    <main class="content">
-      {% block content %}default content{% endblock %}
-    </main>
-
-    {% include "partials/footer.njk" %}
-  </div>
-</body>
+      {% include "partials/footer.njk" %}
+    </div>
+  </body>
 </html>
