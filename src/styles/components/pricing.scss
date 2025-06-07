@@ -1,18 +1,21 @@
 @use "../base/mixins" as *;
 .pricing {
-  width: 408px;
-  min-width: 272px;
+  width: 100%;
+  padding: var(--space-12) var(--space-4) 0;
+  max-width: 408px;
+  margin-inline: auto;
   text-align: center;
 
   @include tab {
-    width: 945px;
+    padding: 120px 40px 0;
+    max-width: 1024px;
   }
   @include desk {
     width: 1200px;
   }
   h2 {
-    padding-top: 16px;
-    margin-bottom: 40px;
+    padding-top: var(--space-4);
+    margin-bottom: var(--space-10);
 
     @include tab {
       margin-bottom: 104px;
@@ -21,7 +24,7 @@
 
   &__plans {
     display: grid;
-    gap: 16px;
+    gap: 10px;
 
     @include tab {
       display: flex;

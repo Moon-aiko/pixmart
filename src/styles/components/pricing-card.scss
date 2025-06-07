@@ -4,12 +4,13 @@
   position: relative;
   background: var(--bg-base);
   border-radius: 20px;
+  border: 2px solid transparent;
   padding: 32px;
   box-shadow: 0 4px 40px 0 rgba(29, 57, 95, 0.08);
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap: 32px;
+  gap: var(--space-4);
   cursor: pointer;
   transition: transform 0.3s ease;
 
@@ -25,25 +26,35 @@
     }
   }
 
+  &__devider {
+    border: 1px solid rgba(31, 50, 71, 0.27);
+    margin-block: 16px 24px;
+  }
+
   &__features {
     list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
-    gap: 16px;
+    gap: var(--space-4);
+    margin-bottom: var(--space-7);
+  }
 
-    &__feature {
-      padding-left: 8px;
-      font-size: var(--font-size-p2);
-      line-height: var(-line-height-p2);
-      letter-spacing: var(--letter-spacing-normal);
-      font-weight: var(--font-weight-regular);
-      text-align: left;
-    }
+  &__feature {
+    display: flex;
+    gap: var(--space-4);
+    align-items: center;
+    font-size: var(--font-size-p2);
+    line-height: var(--line-height-p2);
+    letter-spacing: var(--letter-spacing-normal);
+    font-weight: var(--font-weight-regular);
+    text-align: left;
   }
 
   &--highlighted {
     border: 2px solid var(--color-accent);
+    margin-bottom: 32px;
+
     @include tab {
       padding-top: 56px;
     }

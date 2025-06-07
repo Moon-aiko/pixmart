@@ -2,12 +2,14 @@
   <div class="footer__container">
     <div class="footer__top">
       <div class="footer__info">
+      <div class="footer__logo-wrapper">
         <a href="/" class="footer__logo">
           <svg class="icon icon--footer-logo">
             <use href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
-        <p class="footer__description">{{ footer.text }}</p>
+        </div>
+        <p class="footer__description main-text main-text--p2">{{ footer.text }}</p>
       </div>
 
       <div class="footer__nav">
@@ -55,13 +57,13 @@
             <input
               type="email"
               class="input__email form-field__input"
-              placeholder="Enter your email address ..."
+              placeholder="Enter your email address..."
               required
             />
           </form>
           <button
             type="submit"
-            class="button button--primary button--large"
+            class="footer__button-subscribe button button--primary button--large"
             form="subscribe_form"
           >
             {{ footer.subscribeButton }}
@@ -69,8 +71,9 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="footer__bottom">
+    <div class="footer__bottom main-text main-text--p2">
       <div class="footer__links">
         {% for link in footer.bottomLinks %}
         <a
@@ -85,5 +88,4 @@
         {{ footer.copyright }}
       </p>
     </div>
-  </div>
 </footer>

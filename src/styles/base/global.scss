@@ -7,7 +7,7 @@
 body {
   font-family: var(--font-primary);
   color: var(--color-primary);
-  min-width: 320px;
+  min-width: 440px;
   width: 100%;
   background-color: var(--bg-base);
   overflow-x: hidden;
@@ -27,13 +27,9 @@ a {
   flex: 1;
   overflow-x: hidden;
   display: grid;
-  gap: 64px;
-  padding-inline: 16px;
   margin-bottom: 64px;
 
   @include tab {
-    padding-inline: 40px;
-    gap: 120px;
     margin-bottom: 120px;
   }
   @include desk {

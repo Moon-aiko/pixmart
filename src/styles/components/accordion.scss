@@ -21,9 +21,6 @@
     }
   }
 
-  &[open] {
-    border: 2px solid var(--color-accent);
-  }
   &__header {
     display: flex;
     justify-content: space-between;
@@ -32,10 +29,10 @@
   }
 
   &__content {
-    margin-top: var(--space-3);
-    font-size: var(-font-size-p2);
+    margin-top: var(--space-4);
+    font-size: var(--font-size-p2);
     line-height: var(--line-height-p2);
-    font-weight: var(-font-weight-regular);
+    font-weight: var(--font-weight-regular);
   }
 
   &__toggle {
@@ -52,10 +49,12 @@
   }
 
   &__icon {
-    width: 9.5px;
-    height: 5.5px;
+    width: 32px;
+    height: 32px;
+    fill: var(--bg-base);
     stroke: rgba(13, 13, 21, 1);
     transition: transform 0.3s ease;
+    flex-shrink: 0;
   }
 
   &[open] .accordion__icon {

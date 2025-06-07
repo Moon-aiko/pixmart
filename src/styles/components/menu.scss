@@ -26,8 +26,7 @@
     transform: translateX(0);
   }
   &__input:checked + &__opener::before {
-    transform: rotate(45deg);
-    top: 20px;
+    transform: rotate(45deg) translate(3px, 5px);
   }
 
   &__input:checked + &__opener span {
@@ -35,13 +34,11 @@
   }
 
   &__input:checked + &__opener::after {
-    transform: rotate(-45deg);
-    top: 20px;
+    transform: rotate(-45deg) translate(3px, -5px);
   }
 
   &__opener {
-    position: relative;
-    padding: var(--space-3);
+    padding: 12px;
     z-index: 1001;
     display: flex;
     flex-shrink: 0;
@@ -50,27 +47,21 @@
     background: var(--color-accent);
     border-radius: var(--space-2);
     cursor: pointer;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
 
     &::before,
     &::after,
     & span {
       content: "";
-      position: absolute;
       height: 2px;
       width: 18px;
-      background: white;
+      background: var(--bg-alt);
       transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease;
       border-radius: 2px;
-    }
-    &::before {
-      top: 12px;
-    }
-    & span {
-      top: 20px;
-    }
-    &::after {
-      top: 28px;
     }
     @include tab {
       display: none;
@@ -107,7 +98,7 @@
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      gap: (--space-2);
+      gap: var(--space-2);
       align-items: center;
       margin-top: 0;
     }
@@ -117,12 +108,13 @@
     padding: var(--space-5) var(--space-8);
 
     @include tab {
-      padding: var(--space-1) var(--space-3);
+      padding: 0;
     }
   }
 
   &__link {
     border-radius: 8px;
+    font-family: var(--font-primary);
     font-size: var(--font-size-p1);
     font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-p1);
@@ -130,12 +122,12 @@
     color: var(--color-primary);
 
     @include tab {
-      padding: 6px 12px;
       border-radius: 8px;
       font-size: var(--font-size-p3);
       font-weight: var(--font-weight-semibold);
       line-height: var(--line-height-p3);
       letter-spacing: var(--letter-spacing-normal);
+      padding: 2px 8px;
     }
   }
 }

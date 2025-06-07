@@ -4,54 +4,30 @@
   display: flex;
   flex: 1;
   min-width: 0;
-  // padding-right: 8px;
 
   &__toggle {
     display: none;
   }
 
   &__form {
-    display: flex;
-    flex: 1;
-    visibility: hidden;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-    pointer-events: none;
-    z-index: 1000;
-    position: relative;
-    transition: opacity 0.3s ease;
+    display: none;
 
     @include tab {
-      opacity: 1;
-      visibility: visible;
+      display: flex;
+      flex: 1;
+      transition: opacity 0.3s ease;
       pointer-events: auto;
       max-height: 40px;
       overflow: visible;
     }
   }
+
   &__button {
     @include tab {
       display: none;
     }
   }
 }
-
-.search-wrapper__toggle:checked ~ .search-wrapper__form {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: all;
-  margin-right: 8px;
-  max-height: 92px;
-}
-
 .search__input {
-  flex: 1 1 120;
-  min-width: 80px;
-  max-width: 120px;
-
-  @include tab {
-    max-width: 300px;
-  }
+  min-width: 240px;
 }

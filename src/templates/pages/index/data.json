@@ -228,13 +228,13 @@
       "type": "placeholder1"
     },
     {
-      "icon": "social-media",
+      "icon": "presentation",
       "title": "Slides",
       "tag1": "Pitch-ready",
       "tag2": "Creative"
     },
     {
-      "icon": "presentation",
+      "icon": "social-media",
       "title": "App Icons",
       "tag1": "High-quality",
       "tag2": "Elegant"
@@ -243,7 +243,7 @@
       "type": "placeholder2"
     },
     {
-      "icon": "fonts",
+      "icon": "illustration",
       "title": "Design Tools",
       "tag1": "Easy to use",
       "tag2": "Unique"

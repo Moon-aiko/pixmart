@@ -1,10 +1,12 @@
 @use "../base/mixins" as *;
 .feature-cards {
-  padding-top: 64px;
+  padding: 64px 16px 0;
   width: 100%;
   overflow: hidden;
+  margin-inline: auto;
+
   @include tab {
-    padding-top: 68px;
+    padding: 60px 40px 0;
   }
   @include desk {
     padding-top: 120px;

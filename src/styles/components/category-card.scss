@@ -1,10 +1,10 @@
 @use "../base/mixins" as *;
 .category-card {
-  aspect-ratio: 1 / 1;
   width: 194px;
   background-color: var(--bg-alt-2);
   border-radius: var(--space-6);
-  padding: var(--space-7);
+  padding-block: var(--space-7);
+  padding-inline: var(--space-7) 0;
   text-align: left;
   transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
@@ -81,7 +81,7 @@
   position: relative;
 
   @include tab {
-    transform: translateY(-150px);
+    transform: translateY(-128px);
   }
   @include desk {
     transform: translateY(-115px);
