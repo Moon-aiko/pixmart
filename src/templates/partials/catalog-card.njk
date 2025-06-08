@@ -25,7 +25,7 @@
 
       <div class="catalog-card__content">
         <div class="catalog-card__top">
-          <h3 class="main-title main-title--h3">{{ item.title }}</h3>
+          <h3 class="main-title main-title--h5">{{ item.title }}</h3>
 
           {% if item.category %}
           <p class="catalog-card__category">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="catalog-card__bottom">
-          <p class="catalog-card__price">{{ item.price }}</p>
+          <p class="main-title main-title--h5 catalog-card__price">{{ item.price }}</p>
 
           {% if item.badgeType != "sold-out" %}
           <div class="catalog-card__actions">

@@ -2,11 +2,17 @@
 .catalog {
   display: flex;
   flex-direction: column;
+  padding-inline: var(--space-4);
+
+  @include tab {
+    padding-inline: var(--space-9);
+  }
 
   @include desk {
+    padding-inline: var(--space-9);
     display: grid;
     grid-template-columns: 217px 1fr;
-    gap: var(--space-8);
+    gap: var(--space-14);
   }
 }
 .catalog-content {

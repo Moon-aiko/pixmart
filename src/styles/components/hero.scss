@@ -11,6 +11,10 @@
   @include tab {
     padding: 120px 40px;
   }
+  @include desk {
+    padding: 120px 80px;
+  }
+
   &__inner {
     max-width: 1440px;
     margin-inline: auto;
@@ -26,9 +30,8 @@
       align-items: center;
       gap: 100px;
     }
-
     @include desk {
-      padding-inline: 80px;
+      gap: 170px;
     }
   }
   &__images {
@@ -60,6 +63,8 @@
       }
       @include desk {
         width: 281px;
+        height: 422px;
+        transform: translate(5px, -73px);
       }
     }
     &--top {
@@ -75,6 +80,8 @@
       }
       @include desk {
         width: 292px;
+        height: 161px;
+        transform: translate(-5px, -35px);
       }
     }
 
@@ -92,6 +99,8 @@
       }
       @include desk {
         width: 514px;
+        height: 300px;
+        transform: translate(-170px, -84px);
       }
     }
     img {
@@ -128,8 +137,8 @@
       }
       @include desk {
         border-radius: 3px;
-        top: 24px;
-        transform: translate(525px, -6px);
+        top: 0;
+        transform: translate(500px, -65px);
       }
     }
 

@@ -4,9 +4,14 @@
   flex-direction: column;
   gap: var(--space-4);
   min-width: 408px;
+  padding-bottom: 64px;
+
+  @include tab {
+    padding-bottom: 120px;
+  }
 
   &__paragraph {
-    padding-bottom: 20px;
+    padding-bottom: 16px;
   }
   &__image-block {
     width: 100%;
@@ -17,14 +22,6 @@
     width: 100%;
     min-height: 462px;
     border-radius: 20px;
-
-    // @include tab {
-    //   min-width: 644px;
-    // }
-
-    // @include desk {
-    //   min-width: 940px;
-    // }
   }
 
   &__caption {

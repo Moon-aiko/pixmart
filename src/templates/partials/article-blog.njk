@@ -4,7 +4,7 @@
       <h2 class="main-title main-title--h2">Related Articles</h2>
       <a
         href="{{ article.relatedArticles.link }}"
-        class="link article-blog__subtitle"
+        class="article-blog__subtitle"
       >
         Explore All Articles
         <svg class="icon icon--chevron" role="img" aria-hidden="true">
@@ -24,7 +24,7 @@
             alt="{{ related.title | lower }}"
             class="article-blog__image"
           />
-          <span class="badge badge__blog">TAG</span>
+          <span class="badge badge--blog">TAG</span>
         </div>
         <h3 class="main-title main-title--h5">{{ related.title }}</h3>
         <time class="blog__date" datetime="{{ related.date }}">{{

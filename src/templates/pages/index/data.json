@@ -127,41 +127,41 @@
       {
         "title": "Company",
         "links": [
-          { "label": "Homepage v1", "url": "index" },
-          { "label": "Homepage v2", "url": "index" },
-          { "label": "Homepage v3", "url": "index" },
-          { "label": "About Us", "url": "index" },
-          { "label": "About Us", "url": "index" },
-          { "label": "Blog Articles", "url": "blog" }
+          { "label": "Homepage v1", "url": "#" },
+          { "label": "Homepage v2", "url": "#" },
+          { "label": "Homepage v3", "url": "#" },
+          { "label": "About Us", "url": "#" },
+          { "label": "About Us", "url": "#" },
+          { "label": "Blog Articles", "url": "blog.html" }
         ]
       },
       {
         "title": "Products",
         "links": [
-          { "label": "Website", "url": "index" },
-          { "label": "Mobile App", "url": "index" },
-          { "label": "Social Media Feeds", "url": "index" },
-          { "label": "Presentation", "url": "blog" },
-          { "label": "Product Mockups", "url": "products" },
-          { "label": "Illustrations", "url": "blog" }
+          { "label": "Website", "url": "#" },
+          { "label": "Mobile App", "url": "#" },
+          { "label": "Social Media Feeds", "url": "#" },
+          { "label": "Presentation", "url": "blog.html" },
+          { "label": "Product Mockups", "url": "products.html" },
+          { "label": "Illustrations", "url": "blog.html" }
         ]
       },
       {
         "title": "Account",
         "links": [
-          { "label": "Your Cart", "url": "products" },
-          { "label": "Check Out", "url": "index" },
-          { "label": "Refund Policy", "url": "index" },
-          { "label": "Company Policy", "url": "index" },
-          { "label": "Send A Message", "url": "contact" },
-          { "label": "Customer Support", "url": "contact" }
+          { "label": "Your Cart", "url": "products.html" },
+          { "label": "Check Out", "url": "#" },
+          { "label": "Refund Policy", "url": "#" },
+          { "label": "Company Policy", "url": "#" },
+          { "label": "Send A Message", "url": "contact.html" },
+          { "label": "Customer Support", "url": "contact.html" }
         ]
       }
     ],
     "bottomLinks": [
-      { "label": "Privacy Policy", "url": "index" },
-      { "label": "Terms and Condition", "url": "index" },
-      { "label": "Site Map", "url": "index" }
+      { "label": "Privacy Policy", "url": "#" },
+      { "label": "Terms and Condition", "url": "#" },
+      { "label": "Site Map", "url": "#" }
     ],
     "copyright": "Copyright © 2024 Pixmart. All rights reserved."
   },
@@ -193,9 +193,11 @@
       "top": "hero-icon-top",
       "bottom": "hero-icon-bottom"
     },
-    "titleStart": "Craft Your Success with Our",
+    "titleLine1": "Craft Your",
+    "titleLine2": "Success with",
+    "titleStart3": "Our",
     "titleAccent": "Digital",
-    "titleEnd": "Assets",
+    "titleEnd3": "Assets",
     "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
     "buttons": [
       {
@@ -273,10 +275,10 @@
   ],
   "blog": {
     "title": "Latest Expert",
-    "articlesLink": "/blog",
+    "articlesLink": "/blog.html",
     "articles": [
       {
-        "title": "Sonic live",
+        "title": "Creative Blog",
         "date": "2024-04-05",
         "displayDate": "5 APRIL 2024",
         "images": [
@@ -290,7 +292,7 @@
         ]
       },
       {
-        "title": "The Best Dishes",
+        "title": "Best Dishes",
         "date": "2024-04-05",
         "displayDate": "5 APRIL 2024",
         "images": [
@@ -396,100 +398,100 @@
   "catalog": {
     "products": [
       {
-        "title": "Galaxy NFT Art",
-        "price": "$129.00",
-        "image": "product-1",
+        "title": "Lens Chronicles",
+        "price": "€00.00",
+        "image": "card-1",
         "badgeType": "sold-out",
         "badgeLabel": "SOLD OUT",
-        "category": ["3D", "Digital"]
+        "category": ["Photography", "Creative"]
       },
       {
-        "title": "Digital Collectible",
-        "price": "$149.00",
-        "image": "product-2",
+        "title": "Career Success",
+        "price": "€20.99",
+        "image": "card-2",
         "badgeType": "new",
         "badgeLabel": "NEW",
-        "category": ["3D", "Digital"]
+        "category": ["Guidance", "Jobs"]
       },
       {
-        "title": "Rare Sculpture",
-        "price": "$299.00",
-        "image": "product-3",
+        "title": "Dream Homes",
+        "price": "€45.99",
+        "image": "card-3",
         "badgeType": "popular",
         "badgeLabel": "POPULAR",
-        "category": ["3D", "Digital"]
+        "category": ["Real Estate", " Modern"]
       },
       {
-        "title": "Rare Sculpture",
-        "price": "$299.00",
-        "image": "product-3",
+        "title": "Foodish Catering",
+        "price": "€15.99",
+        "image": "card-4",
         "badgeType": "popular",
         "badgeLabel": "POPULAR",
-        "category": ["3D", "Digital"]
+        "category": ["Food", "Events"]
       },
       {
-        "title": "Rare Sculpture",
-        "price": "$299.00",
-        "image": "product-3",
+        "title": "Caring Hearts",
+        "price": "€19.99",
+        "image": "card-5",
         "badgeType": "new",
         "badgeLabel": "NEW",
-        "category": ["3D", "Digital"]
+        "category": ["Healthcare", "Support"]
       },
       {
-        "title": "Rare Sculpture",
-        "price": "$299.00",
-        "image": "product-3",
+        "title": "Gaming Rise",
+        "price": "€00.00",
+        "image": "card-6",
         "badgeType": "sold-out",
         "badgeLabel": "SOLD OUT",
-        "category": ["3D", "Digital"]
+        "category": ["eSports", "Trends"]
       },
       {
-        "title": "Rare Sculpture",
-        "price": "$299.00",
-        "image": "product-3",
+        "title": "Edit Pro",
+        "price": "€00.00",
+        "image": "card-7",
         "badgeType": "sold-out",
         "badgeLabel": "SOLD OUT",
-        "category": ["3D", "Digital"]
+        "category": ["3Design", "Tools"]
       },
       {
-        "title": "Rare Sculpture",
-        "price": "$299.00",
-        "image": "product-3",
+        "title": "Banking Redefined",
+        "price": "€25.99",
+        "image": "card-8",
         "badgeType": "new",
         "badgeLabel": "NEW",
-        "category": ["3D", "Digital"]
+        "category": ["Finance", "Secure"]
       },
       {
-        "title": "Rare Sculpture",
-        "price": "$299.00",
-        "image": "product-3",
+        "title": "Exploring Fun",
+        "price": "€41.99",
+        "image": "card-9",
         "badgeType": "popular",
         "badgeLabel": "POPULAR",
-        "category": ["3D", "Digital"]
+        "category": ["DigitalTravel", "Adventure"]
       },
       {
-        "title": "Rare Sculpture",
-        "price": "$299.00",
-        "image": "product-3",
+        "title": "Admin Dashboard",
+        "price": "€41.99",
+        "image": "card-10",
         "badgeType": "popular",
         "badgeLabel": "POPULAR",
-        "category": ["3D", "Digital"]
+        "category": ["Data", "Toolsl"]
       },
       {
-        "title": "Rare Sculpture",
-        "price": "$299.00",
-        "image": "product-3",
+        "title": "Analytical Dashboard",
+        "price": "€10.99",
+        "image": "card-11",
         "badgeType": "new",
         "badgeLabel": "NEW",
-        "category": ["3D", "Digital"]
+        "category": ["Data", "Toolsl"]
       },
       {
-        "title": "Rare Sculpture",
-        "price": "$299.00",
-        "image": "product-3",
+        "title": "Kindergarten",
+        "price": "€00.99",
+        "image": "card-12",
         "badgeType": "sold-out",
         "badgeLabel": "SOLD OUT",
-        "category": ["3D", "Digital"]
+        "category": ["Education", "Kids"]
       }
     ]
   },
@@ -508,16 +510,16 @@
     },
     "date": "April 10, 2024",
     "categories": [
-      { "name": "Graphic Design Trends", "url": "blog", "active": false },
-      { "name": "Typography & Fonts", "url": "blog", "active": true },
-      { "name": "UI/UX Design", "url": "blog", "active": false },
-      { "name": "Branding & Identity", "url": "blog", "active": false },
-      { "name": "Illustration", "url": "blog", "active": false },
-      { "name": "Digital Marketing", "url": "blog", "active": false }
+      { "name": "Graphic Design Trends", "url": "#", "active": false },
+      { "name": "Typography & Fonts", "url": "#", "active": true },
+      { "name": "UI/UX Design", "url": "#", "active": false },
+      { "name": "Branding & Identity", "url": "#", "active": false },
+      { "name": "Illustration", "url": "#", "active": false },
+      { "name": "Digital Marketing", "url": "#", "active": false }
     ],
     "latest": [
-      { "title": "Text", "date": "March 15, 2024", "url": "blog" },
-      { "title": "Text", "date": "March 15, 2024", "url": "blog" }
+      { "title": "Text", "date": "March 15, 2024", "url": "#" },
+      { "title": "Text", "date": "March 15, 2024", "url": "#" }
     ],
     "content": [
       {
@@ -550,7 +552,7 @@
         "alt": "Alt text",
         "caption": "Example of font usage in typography.",
         "link": {
-          "url": "https://example.com",
+          "url": "#",
           "text": "Get this asset"
         }
       },

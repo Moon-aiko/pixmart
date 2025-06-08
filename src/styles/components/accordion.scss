@@ -3,7 +3,8 @@
   border-radius: 10px;
   padding: 24px;
   box-shadow: 0 4px 40px 0 rgba(29, 57, 95, 0.08);
-  transition: border 0.3s ease;
+  overflow: hidden;
+  transition: all 0.3s ease;
 
   summary {
     list-style: none;

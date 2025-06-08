@@ -2,6 +2,15 @@
 .blog {
   padding: var(--space-12) var(--space-4) 0;
 
+  @include tab {
+    padding: 100px 40px 0;
+  }
+
+  @include desk {
+    padding: 0;
+    padding-top: 100px;
+  }
+
   &__container {
     display: grid;
     gap: 48px;
@@ -43,6 +52,12 @@
 
   &__image-wrapper {
     width: 408px;
+    @include tab {
+      width: 456px;
+    }
+    @include desk {
+      width: 624px;
+    }
   }
   &__image {
     width: 100%;

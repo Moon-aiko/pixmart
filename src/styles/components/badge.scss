@@ -54,7 +54,9 @@
   &__catalog {
     left: 16px;
     top: 16px;
-    padding: 16px;
+    padding-inline: 16px;
+    height: 40px;
+    padding-top: 10px;
     font-size: var(--font-size-p2);
     line-height: var(--line-height-p2);
     font-weight: var(--font-weight-medium);
@@ -65,19 +67,23 @@
     &--sold-out {
       background-color: var(--bg-base);
       color: var(--color-secondary-2);
+      width: 114px;
     }
 
     &--new {
       background-color: var(--color-accent-green);
       color: var(--color-white);
+      width: 72px;
+      padding-top: 10px;
     }
 
     &--popular {
       background-color: var(--color-accent);
       color: var(--color-white);
+      width: 111px;
     }
   }
-  &__blog {
+  &--blog {
     left: 16px;
     bottom: -20px;
     background-color: var(--color-accent);

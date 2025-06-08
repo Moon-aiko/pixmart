@@ -9,11 +9,13 @@
 
   @include tab {
     max-width: 1024px;
-    padding: 100px 40px 0;
+    padding: 120px 40px 0;
   }
 
   @include desk {
     max-width: 1440px;
+    padding-inline: 0px;
+    padding-top: 80px;
   }
 
   &__header {

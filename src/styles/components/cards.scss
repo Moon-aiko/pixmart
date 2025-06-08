@@ -9,7 +9,9 @@
     padding: 60px 40px 0;
   }
   @include desk {
-    padding-top: 120px;
+    padding-top: 100px;
+    padding-inline: 0;
+    max-width: 1440px;
   }
 
   &__flex {

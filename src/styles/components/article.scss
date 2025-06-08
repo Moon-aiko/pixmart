@@ -1,18 +1,24 @@
 @use "../base/mixins" as *;
 .article {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+  padding-top: 64px;
   display: flex;
   flex-direction: column;
   gap: var(--space-9);
-  width: 408px;
+  max-width: 408px;
   justify-content: start;
   align-items: start;
 
   @include tab {
-    width: 944px;
+    padding-inline: var(--space-9);
+    max-width: 1024px;
   }
 
   @include desk {
-    width: 1280px;
+    max-width: 1280px;
+    align-items: center;
   }
 
   &__container {
@@ -21,6 +27,9 @@
       gap: var(--space-9);
       grid-template-columns: 260px 1fr;
       align-items: start;
+    }
+    @include desk {
+      width: 1280px;
     }
   }
   &__hero {
@@ -31,17 +40,32 @@
 
   &__badge {
     background-color: var(--color-accent);
-    padding: 16px;
     border-radius: 100px;
     color: var(--color-white);
     width: 146px;
     text-align: center;
+    height: 40px;
+    padding-inline: 16px;
+    text-transform: uppercase;
+    padding-top: 10px;
   }
   &__header {
     display: grid;
     gap: 24px;
+
+    @include tab {
+      max-width: 900px;
+    }
   }
 
+  &__title {
+    @include tab {
+      font-size: var(--font-size-h1);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--line-height-h1);
+      letter-spacing: var(--letter-spacing-tight);
+    }
+  }
   h1 {
     text-align: left;
   }

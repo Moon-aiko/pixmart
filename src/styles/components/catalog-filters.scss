@@ -25,6 +25,10 @@
     }
   }
 
+  &__button {
+    height: 40px;
+  }
+
   &__block {
     border: none;
     padding: var(--space-4);

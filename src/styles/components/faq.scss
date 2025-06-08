@@ -9,6 +9,10 @@
   @include tab {
     padding-inline: 80px;
   }
+  @include desk {
+    padding-inline: 0;
+    padding-top: 80px;
+  }
 
   &__container {
     position: relative;
@@ -26,26 +30,35 @@
   }
 
   &__left {
-    max-width: 408px;
+    width: 408px;
     display: grid;
     gap: var(--space-4);
 
     @include tab {
-      align-self: center;
+      align-self: start;
       justify-items: start;
+      padding-top: 235px;
+    }
+    @include desk {
+      padding-top: 200px;
+      max-width: 608px;
     }
   }
 
   &__content {
-    max-width: 412px;
-    flex: 1;
+    width: 100%;
+    width: 412px;
+    height: 100%;
     background: transparent;
     display: flex;
     flex-direction: column;
+    align-self: start;
     gap: var(--space-4);
+    height: 725px;
 
     @include desk {
-      max-width: none;
+      height: 600px;
+      width: 620px;
     }
   }
   &__glow {
