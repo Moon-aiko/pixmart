@@ -169,7 +169,7 @@ function htmllintReporter(results) {
 }
 
 export const styles = () =>
-  src(paths.dev.styles, { sourcemaps: true })
+  src(paths.dev.styles, { sourcemaps: false })
     .pipe(postcss([
       args.lint ? stylelint() : () => {},
       isDev ? debug : () => { },
@@ -186,7 +186,7 @@ export const styles = () =>
       outputStyle: 'expanded',
       indentWidth: 4
     }).on('error', sass.logError))
-    .pipe(dest(paths.dist.styles, { sourcemaps: true }))
+    .pipe(dest(paths.dist.styles, { sourcemaps: false }))
     .pipe(gulpif(args.debug, size(sizeOptions)))
     .pipe(bs.stream())
 

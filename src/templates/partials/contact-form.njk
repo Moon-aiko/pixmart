@@ -1,5 +1,6 @@
-<section class="contact-form">
-  <form class="form-field">
+<section class="contact-form-section">
+  <form class="contact-form">
+  <div class="form-field">
     <label for="fullname">Full Name</label>
     <input
       id="fullname"
@@ -8,7 +9,9 @@
       placeholder="Amelia Robert Johnson"
       required
     />
+    </div>
 
+    <div class="form-field">
     <label for="email">Email Address</label>
     <input
       id="email"
@@ -17,14 +20,23 @@
       placeholder="amelia.robertjohnson@pixmart.com"
       required
     />
+    </div>
 
+    <div class="form-field">
     <label for="subject">Subject</label>
+     <div class="select-wrapper">
     <select id="subject" name="subject" required>
       <option>General Inquiry</option>
       <option>Support</option>
       <option>Business</option>
     </select>
+    <svg class="icon icon--arrow-down" width="24" height="24">
+    <use href="img/sprite.svg#arrow-down"></use>
+     </svg>
+  </div>
+    </div>
 
+    <div class="form-field">
     <label for="message">Message</label>
     <textarea
       id="message"
@@ -32,6 +44,7 @@
       placeholder="Enter your message ..."
       required
     ></textarea>
+    </div>
 
     <div class="contact-form__privacy">
       <div class="contact-form__checkbox">
