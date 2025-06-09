@@ -1,5 +1,6 @@
 <div class="catalog-fadeout-wrapper">
   <section class="catalog-card__list">
+    <h2 class="visually-hidden">Product List</h2>
     {% for item in catalog.products %}
     <article
       class="catalog-card{% if item.badgeType == 'sold-out' %} catalog-card--sold-out{% endif %}"

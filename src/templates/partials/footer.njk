@@ -15,7 +15,7 @@
       <div class="footer__nav">
         {% for section in footer.navSections %}
         <div class="footer-nav__section">
-          <h5 class="main-title main-title--h5">{{ section.title }}</h5>
+          <p class="main-title main-title--h5">{{ section.title }}</p>
           <ul class="footer-nav__list">
             {% for item in section.links %}
             <li class="footer-nav__item">
@@ -46,7 +46,7 @@
       </div>
 
       <div class="footer__subscribe">
-        <h4 class="main-title main-title--h4">{{ footer.subscribeTitle }}</h4>
+        <h2 class="main-title main-title--h4">{{ footer.subscribeTitle }}</h2>
         <div class="footer__subscribe-action">
           <form
             id="subscribe_form"

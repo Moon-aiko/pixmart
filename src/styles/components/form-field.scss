@@ -124,6 +124,7 @@
     position: absolute;
     right: 20px;
     top: 45%;
+    transform: translateY(-50%);
     pointer-events: none;
     fill: var(--color-primary);
   }
