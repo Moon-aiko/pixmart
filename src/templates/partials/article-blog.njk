@@ -26,10 +26,12 @@
           />
           <span class="badge badge--blog">TAG</span>
         </div>
+        <div class="article-blog__info">
         <h3 class="main-title main-title--h5">{{ related.title }}</h3>
         <time class="blog__date" datetime="{{ related.date }}">{{
           related.displayDate
         }}</time>
+        </div>
       </article>
       {% endfor %}
     </div>

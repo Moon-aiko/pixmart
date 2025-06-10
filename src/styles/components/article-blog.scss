@@ -3,31 +3,31 @@
   width: 100%;
   margin-inline: auto;
   background-color: rgba(240, 246, 253, 1);
-  max-width: 440px;
   display: grid;
   gap: 48px;
   justify-items: start;
   padding: var(--space-8) var(--space-4);
+  margin-bottom: 100px;
 
   @include tab {
-    padding: var(--space-9);
-    max-width: 1024px;
+    padding: 64px 40px 60px;
   }
   @include desk {
-    min-width: 1440px;
+    padding: 80px 80px 64px;
   }
 
   &__container {
-    width: 440px;
-    padding: 16px 32px;
+    max-width: 440px;
+    display: grid;
+    gap: var(--space-8);
+
     @include tab {
+      max-width: 1024px;
       display: grid;
       gap: 32px;
-      padding: 40px;
     }
     @include desk {
-      padding: 40px 80px;
-      width: 1440px;
+      max-width: 1440px;
     }
   }
 
@@ -94,7 +94,7 @@
     border-radius: 20px;
     box-shadow: 0 4px 30px 0 rgba(29, 57, 95, 0.05);
     display: grid;
-    gap: 8px;
+    gap: 18px;
 
     @include tab {
       &:nth-child(3) {
@@ -106,6 +106,12 @@
         grid-column: auto;
       }
     }
+  }
+
+  &__info {
+    display: grid;
+    gap: 12px;
+    padding-left: 20px;
   }
   h3 {
     padding-top: 16px;

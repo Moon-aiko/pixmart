@@ -4,11 +4,6 @@
   flex-direction: column;
   gap: var(--space-4);
   min-width: 408px;
-  padding-bottom: 64px;
-
-  @include tab {
-    padding-bottom: 120px;
-  }
 
   &__paragraph {
     padding-bottom: 16px;
