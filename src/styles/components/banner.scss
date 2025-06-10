@@ -2,37 +2,43 @@
 .banner {
   margin-top: 92px;
   background-color: rgba(213, 222, 229, 1);
-  background-image: url("../img/heading-desk-1x.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 256px;
-  display: flex;
-  align-items: center;
-
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url("../img/heading-mob-2x.webp");
-  }
-
-  @include tab {
-    background-image: url("../img/heading-tab-1x.webp");
-    min-height: 290px;
-
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: url("../img/heading-tab-2x.webp");
-    }
-  }
-
-  @include desk {
-    background-image: url("../img/heading-desk-2.webp");
-
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: url("../img/heading-desk-2x.webp");
-    }
-  }
 
   &__container {
-    padding: 16px;
+    background-color: rgba(213, 222, 229, 1);
+    background-color: rgba(213, 222, 229, 1);
+    background-image: url("../img/heading-desk-1x.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 256px;
+    display: flex;
+    align-items: center;
+    max-width: 440px;
+    width: 100%;
+    margin-inline: auto;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url("../img/heading-mob-2x.webp");
+    }
+
+    @include tab {
+      max-width: 1024px;
+      background-image: url("../img/heading-tab-1x.webp");
+
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: url("../img/heading-tab-2x.webp");
+      }
+    }
+
+    @include desk {
+      max-width: 1440px;
+      background-image: url("../img/heading-desk-2.webp");
+
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: url("../img/heading-desk-2x.webp");
+      }
+    }
+
     @include tab {
       padding-left: 80px;
       padding-block: 64px;

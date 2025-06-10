@@ -1,7 +1,5 @@
 @use "../base/mixins" as *;
 .article-blog {
-  width: 100%;
-  margin-inline: auto;
   background-color: rgba(240, 246, 253, 1);
   display: grid;
   gap: 48px;
@@ -17,6 +15,8 @@
   }
 
   &__container {
+    width: 100%;
+    margin-inline: auto;
     max-width: 440px;
     display: grid;
     gap: var(--space-8);

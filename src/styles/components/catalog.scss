@@ -1,11 +1,15 @@
 @use "../base/mixins" as *;
 .catalog {
+  width: 100%;
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   padding-inline: var(--space-4);
+  max-width: 440px;
 
   @include tab {
     padding-inline: var(--space-9);
+    max-width: 1024px;
   }
 
   @include desk {
@@ -13,6 +17,7 @@
     display: grid;
     grid-template-columns: 217px 1fr;
     gap: 24px;
+    max-width: 1440px;
   }
 }
 .catalog-content {
