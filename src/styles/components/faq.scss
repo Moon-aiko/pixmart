@@ -19,7 +19,9 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-9);
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
 
     @include tab {
       display: grid;

@@ -7,7 +7,8 @@
     <ul class="catalog-filter__list catalog-filter__list--{{ filter.type }}">
       {% for option in filter.options %}
       <li class="catalog-filter__item">
-        <input type="{{ filter.type }}" id="{{ option.id }}" name="{{ filter.title | lower | replace(' ', '_') }}[]"  value="{{ option.value }}" {% if filter.type == 'radio' and
+        <input type="{{ filter.type }}" id="{{ option.id }}" name="{{ filter.title | lower | replace(' ', '_')
+        }}[]" value="{{ option.value }}" {% if filter.type == 'radio' and
         loop.first %} required {% endif %} />
         <label
           class="main-text main-text--p3 catalog-filter__label"
@@ -22,7 +23,11 @@
     <div class="catalog-filter__switches">
       {% for option in filter.options %}
       <label class="switch">
-        <input type="checkbox" id="{{ option.id }}" name="{{ filter.title | lower | replace(' ', '_') }}[]"/>
+        <input
+          type="checkbox"
+          id="{{ option.id }}"
+          name="{{ filter.title | lower | replace(' ', '_') }}[]"
+        />
         <span class="switch__track"></span>
         {{ option.label }}
       </label>

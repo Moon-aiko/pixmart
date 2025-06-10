@@ -41,6 +41,7 @@
   }
   &__list {
     display: flex;
+    justify-content: space-between;
     gap: 16px;
     scroll-snap-type: x mandatory;
     width: max-content;

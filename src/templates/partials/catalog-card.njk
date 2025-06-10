@@ -5,9 +5,6 @@
     <article
       class="catalog-card{% if item.badgeType == 'sold-out' %} catalog-card--sold-out{% endif %}"
     >
-      {% if item.badgeType == 'sold-out' %}
-      <div class="catalog-card__overlay"></div>
-      {% endif %}
 
       <div class="catalog-card__image-wrapper">
         <img
@@ -24,9 +21,13 @@
         {% endif %}
       </div>
 
+       {% if item.badgeType == 'sold-out' %}
+      <div class="catalog-card__overlay"></div>
+      {% endif %}
+
       <div class="catalog-card__content">
         <div class="catalog-card__top">
-          <h3 class="main-title main-title--h5">{{ item.title }}</h3>
+          <h3 class="catalog-card__title main-title main-title--h5">{{ item.title }}</h3>
 
           {% if item.category %}
           <p class="catalog-card__category">

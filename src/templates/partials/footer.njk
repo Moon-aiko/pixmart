@@ -1,5 +1,6 @@
 <footer class="footer">
   <div class="footer__container">
+  <div class="footer__top-section">
     <div class="footer__top">
       <div class="footer__info">
       <div class="footer__logo-wrapper">
@@ -29,6 +30,7 @@
         {% endfor %}
       </div>
     </div>
+
     <div class="footer__middle">
       <div class="footer__socials">
         {% for social in footer.socials %}
@@ -46,7 +48,7 @@
       </div>
 
       <div class="footer__subscribe">
-        <h2 class="main-title main-title--h4">{{ footer.subscribeTitle }}</h2>
+        <h2 class="main-title main-title--h4">{{ footer.subscribeTitleStart }}<br>{{ footer.subscribeTitleEnd }}</h2>
         <div class="footer__subscribe-action">
           <form
             id="subscribe_form"
@@ -72,20 +74,23 @@
       </div>
     </div>
   </div>
+  </div>
 
     <div class="footer__bottom main-text main-text--p2">
-      <div class="footer__links">
-        {% for link in footer.bottomLinks %}
-        <a
+      <div class="footer__bottom-section">
+        <div class="footer__links">
+          {% for link in footer.bottomLinks %}
+          <a
           href="{{ link.url }}"
           class="footer__bottom-link{% if not loop.last %} footer__bottom-link--with-divider{% endif %}"
-        >
+          >
           {{ link.label }}
-        </a>
-        {% endfor %}
-      </div>
-      <p class="footer__copyright">
+          </a>
+          {% endfor %}
+        </div>
+        <p class="footer__copyright">
         {{ footer.copyright }}
-      </p>
+        </p>
+      </div>
     </div>
 </footer>

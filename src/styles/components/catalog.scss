@@ -9,10 +9,10 @@
   }
 
   @include desk {
-    padding-inline: var(--space-9);
+    padding: 0;
     display: grid;
     grid-template-columns: 217px 1fr;
-    gap: var(--space-14);
+    gap: 24px;
   }
 }
 .catalog-content {
