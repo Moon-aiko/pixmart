@@ -56,7 +56,6 @@
     flex-direction: column;
     align-self: start;
     gap: var(--space-4);
-    height: 725px;
 
     @include desk {
       height: 600px;

@@ -26,7 +26,9 @@
     transform: translateX(0);
   }
   &__input:checked + &__opener::before {
-    transform: rotate(45deg) translate(3px, 5px);
+    position: absolute;
+    top: 20px;
+    transform: rotate(45deg);
   }
 
   &__input:checked + &__opener span {
@@ -34,7 +36,9 @@
   }
 
   &__input:checked + &__opener::after {
-    transform: rotate(-45deg) translate(3px, -5px);
+    position: absolute;
+    top: 20px;
+    transform: rotate(-45deg);
   }
 
   &__opener {
@@ -52,6 +56,7 @@
     gap: 4px;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     &::before,
     &::after,
