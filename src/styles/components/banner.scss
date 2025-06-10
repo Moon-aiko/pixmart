@@ -14,7 +14,6 @@
     max-width: 440px;
     width: 100%;
     margin-inline: auto;
-
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url("../img/heading-mob-2x.webp");
     }
@@ -22,7 +21,6 @@
     @include tab {
       max-width: 1024px;
       background-image: url("../img/heading-tab-1x.webp");
-
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         background-image: url("../img/heading-tab-2x.webp");
       }
@@ -31,6 +29,7 @@
     @include desk {
       max-width: 1440px;
       background-image: url("../img/heading-desk-2.webp");
+      padding-left: 80px;
 
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         background-image: url("../img/heading-desk-2x.webp");
@@ -39,7 +38,8 @@
 
     @include tab {
       padding-left: 80px;
-      padding-block: 64px;
+      // padding-block: 64px;
+      padding-block: 60px 102px;
     }
   }
 
