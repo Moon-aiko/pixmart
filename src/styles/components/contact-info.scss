@@ -10,11 +10,26 @@
   margin-bottom: 64px;
 
   @include tab {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-9);
-    padding: 64px 40px 0;
-    align-items: end;
+    padding: 64px 40px 64px;
+  }
+  @include desk {
+    padding: 64px 80px 64px;
+  }
+
+  &__sections {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 440px;
+    @include tab {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-9);
+      align-items: start;
+      max-width: var(--screen-tab);
+    }
+    @include desk {
+      max-width: var(--screen-desk);
+    }
   }
 
   &__info {
@@ -30,7 +45,8 @@
 
   &__button {
     align-self: flex-start;
-    margin-block: 16px;
+    margin-block: var(--space-4);
+    height: 64px;
   }
   &__details {
     list-style: none;
@@ -46,12 +62,12 @@
   &__image-wrapper {
     position: relative;
     width: 100%;
-    min-height: 314px;
+    height: 314px;
   }
   &__address {
     position: absolute;
-    bottom: 32px;
-    right: 16px;
+    bottom: 22px;
+    right: var(--space-4);
     width: 347px;
     height: 72px;
     border-radius: 10px;

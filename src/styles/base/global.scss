@@ -35,6 +35,11 @@ a {
   @include desk {
     padding-inline: 80px;
   }
+
+  &--no-padding {
+    padding: 0;
+    margin: 0;
+  }
 }
 .highlight {
   color: var(--color-accent);

@@ -12,7 +12,7 @@
     <div class="wrapper">
       {% include "partials/header.njk" %} {% block lead %}{% endblock %}
 
-      <main class="content">
+    <main class="content{% if noPadding %} content--no-padding{% endif %}">
         {% block content %}default content{% endblock %}
       </main>
        {% block afterContent %}{% endblock %}
