@@ -1,14 +1,12 @@
 @use "../base/mixins" as *;
 .banner {
   margin-top: 92px;
-  background-color: rgba(213, 222, 229, 1);
 
   &__container {
     background-color: rgba(213, 222, 229, 1);
-    background-color: rgba(213, 222, 229, 1);
     background-image: url("../img/heading-desk-1x.webp");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
     background-size: cover;
     min-height: 256px;
     display: flex;
