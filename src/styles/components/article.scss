@@ -23,7 +23,7 @@
 
   &__container {
     display: grid;
-    gap: var(--space-9);
+    gap: var(--space-8);
 
     @include tab {
       display: grid;

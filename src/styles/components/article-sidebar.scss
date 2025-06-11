@@ -1,7 +1,7 @@
 .article-sidebar {
   margin-top: var(--space-2);
   display: grid;
-  gap: var(--space-9);
+  gap: var(--space-8);
   max-width: 408px;
 
   &__author {
@@ -30,7 +30,8 @@
   &__section {
     display: flex;
     flex-direction: column;
-    gap: var(--space-3);
+    gap: var(--space-7);
+    padding-block: 2px 6px;
   }
   &__list {
     list-style: none;
@@ -79,5 +80,8 @@
   }
   &__article-date {
     color: var(--color-secondary-3);
+  }
+  &__heading {
+    padding-top: 6px;
   }
 }

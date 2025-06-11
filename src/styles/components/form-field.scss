@@ -59,15 +59,18 @@
     margin-bottom: 20px;
   }
 
-  &:hover {
+  input:hover,
+  select:hover,
+  textarea:hover,
+  input:focus,
+  select:focus,
+  textarea:focus {
     box-shadow: 0 0 0 2px var(--color-focus);
   }
 
-  &:focus {
-    box-shadow: 0 0 0 2px var(--color-focus);
-  }
-
-  &:disabled {
+  input:disabled,
+  select:disabled,
+  textarea:disabled {
     background-color: var(--color-separator);
     border: 1px solid var(--color-separator-bold);
   }
@@ -97,11 +100,15 @@
   &--invalid textarea {
     border-color: var(--color-error);
   }
-  &--validated {
+  &--validated input,
+  &--validated select,
+  &--validated textarea {
     border-color: var(--color-separator-bold);
   }
 
-  &--disabled {
+  &--disabled input,
+  &--disabled select,
+  &--disabled textarea {
     background-color: var(--color-disabled-bg);
     color: var(--color-disabled-text);
   }
@@ -123,7 +130,7 @@
     height: 24px;
     position: absolute;
     right: 20px;
-    top: 45%;
+    top: 30px;
     transform: translateY(-50%);
     pointer-events: none;
     fill: var(--color-primary);

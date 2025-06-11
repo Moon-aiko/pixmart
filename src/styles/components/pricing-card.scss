@@ -24,6 +24,9 @@
     @include tab {
       transform: translateY(-56px);
     }
+    @include desk {
+      transform: translateY(-35px);
+    }
   }
 
   &__devider {
